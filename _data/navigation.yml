@@ -26,6 +26,8 @@ categories:
     url: /categories/java/
   - title: "Spring"
     url: /categories/spring/
+  - title: "Server"
+    url: /categories/server/
   - title: "Database"
     url: /categories/database/
   - title: "Git/Github"
