@@ -1,0 +1,33 @@
+# main links
+main:
+  - title: "Home"
+    url: https://ijnooyah.github.io/
+
+  - title: "About"
+    url: /about/
+
+  - title: "GitHub"
+    url: https://github.com/ijnooyah
+
+  # - title: "Projects"
+  #   url: /projects/
+
+  # - title: "Categories"
+  #   url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "Algorithm"
+    url: /categories/algorithm/
+  - title: "Network"
+    url: /categories/network/
+  - title: "Java"
+    url: /categories/java/
+  - title: "Spring"
+    url: /categories/spring/
+  - title: "Database"
+    url: /categories/database/
+  - title: "Git/Github"
+    url: /categories/git-github/
+
