@@ -20,16 +20,18 @@ main:
 categories:
   - title: "Algorithm"
     url: /categories/algorithm/
-  - title: "Network"
-    url: /categories/network/
-  - title: "Java"
-    url: /categories/java/
-  - title: "Spring"
-    url: /categories/spring/
-  - title: "Server"
-    url: /categories/server/
+  - title: "Architecture"
+    url: /categories/architecture/
   - title: "Database"
     url: /categories/database/
   - title: "Git/Github"
     url: /categories/git-github/
+  - title: "Java"
+    url: /categories/java/
+  - title: "Network"
+    url: /categories/network/
+  - title: "Server"
+    url: /categories/server/
+  - title: "Spring"
+    url: /categories/spring/
 
