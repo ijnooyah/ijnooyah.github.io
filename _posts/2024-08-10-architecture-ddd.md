@@ -7,7 +7,7 @@ categories:
 tags:
   - [Architecture]
 
-permalink: /Architecture/ddd/
+permalink: /architecture/ddd/
 
 toc: true
 toc_sticky: true
