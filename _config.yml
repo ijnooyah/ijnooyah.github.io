@@ -24,7 +24,7 @@ title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
 name: "윤지" # 블로그 닉네임 설정
 description: "천천히 그리고 꾸준히 채워 나가는 곳" # 블로그 설명
-url: "https://iujnooyah.github.io/" # 블로그 URL
+url: "https://ijnooyah.github.io/" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "ijnooyah/ijnooyah.github.io" # GitHub Repo 이름
 teaser: #
