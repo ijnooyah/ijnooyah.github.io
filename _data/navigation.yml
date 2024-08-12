@@ -36,4 +36,6 @@ categories:
     url: /categories/server/
   - title: "Spring"
     url: /categories/spring/
+  - title: "Spring Security"
+    url: /categories/spring-security/
 
