@@ -24,6 +24,8 @@ categories:
     url: /categories/architecture/
   - title: "Database"
     url: /categories/database/
+  - title: "Docker"
+    url: /categories/docker/
   - title: "Git/Github"
     url: /categories/git-github/
   - title: "Java"
