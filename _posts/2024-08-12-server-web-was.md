@@ -30,12 +30,12 @@ Web Server란 **웹 브라우저(클라이언트)**로부터 **HTTP 요청**을 
 # 🌲 WAS(Web Application Server)
 WAS(Web Application Server)란 **웹 서버(Web Server) + 웹 컨테이너(Web Container)**를 결합한 서버를 의미한다. 예시로 Tomcat, Jeus 등이 있다.
 
-## 💻 WAS 기능
+## 🏈 WAS 기능
 - 클라이언트로부터 **HTTP 요청**을 받을 수 있다. (대부분의 WAS는 Web Server 내장) 
 - 요청에 맞는 정적 컨텐츠를 제공할 수 있다.
 - **DB 조회**나 다양한 로직 처리를 통해 **동적 컨텐츠**를 제공할 수 있다.
 
-## 🍻 웹 컨테이너(Web Container)
+## 🌱 웹 컨테이너(Web Container)
 **"동적인 처리를 하는 곳"**  
 웹 컨테이너는 JSP나 Servlet이 실행될 수 있는 프로그램으로 **서블릿 컨테이너(Servlet Container)**라고도 한다.
 
