@@ -51,7 +51,7 @@ JDBC API를 사용하는 애플케이션의 구조는 `자바 애플리케이션
 클라이언트 **요청이 오면 Connection 객체를 빌려**주고  
 해당 객체 임무가 **완료되면 다시 Connection 객체를 반납**해 Pool에 저장한다.
 
-![connection-pool](/assets/images/posts-img/database/database-connection-pool/connection-pool.png)
+![connection-pool](/assets/images/posts_img/database/database-connection-pool/connection-pool.png)
 
 Connection Pool의 종류로는 “common-dbcp2”, “tomcat-jdbc Pool”, “DrvierManager DataSource”, “HikariCP” 등이 있다.
 
