@@ -22,9 +22,9 @@ locale: "ko-KR" #"en-US"
 title: "Yoonji Blog" # 상단 헤더에 보이는 블로그 명
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "yoonji" # 블로그 닉네임 설정
+name: "Yoonji" # 블로그 닉네임 설정
 description: "천천히 그리고 꾸준히 채워 나가는 곳" # 블로그 설명
-url: "https://ijnooyah.github.io/" # 블로그 URL
+url: "https://ijnooyah.github.io" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "ijnooyah/ijnooyah.github.io" # GitHub Repo 이름
 teaser: #
@@ -56,9 +56,11 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: # true, false (default)
-search: # true, false (default)
-search_full_content: # true, false (default)
-search_provider: # google
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: "lunr" # google
+lunr:
+  search_within_pages : false # true, false (default)
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
