@@ -74,7 +74,7 @@ DI(Dependency Injection: 의존성 주입)은 **객체간의 의존 관계**를 
 - 필드 주입  
 
 스프링은 세가지 방법 중 **생성자 주입** 방식을 권장한다.  
-세가지 방법에 대한 자세한 설명은 [생성자 주입]() 에서 확인해보자.
+세가지 방법에 대한 자세한 설명은 [생성자 주입](){: target="_blank"} 에서 확인해보자.
 
 **DI의 장점**
 - 의존성이 줄어든다. (변경에 덜 취약해진다.)
@@ -137,7 +137,7 @@ PSA(Portable Sevice Abstraction: 일관성 있는 서비스 추상화)은 환경
 
 ---
 
-참고
+<p class="ref">참고</p>
 - [https://velog.io/@ohzzi/Spring-DIIoC-IoC-DI-%EA%B7%B8%EA%B2%8C-%EB%AD%94%EB%8D%B0](https://velog.io/@ohzzi/Spring-DIIoC-IoC-DI-%EA%B7%B8%EA%B2%8C-%EB%AD%94%EB%8D%B0)
 - [https://velog.io/@jummi10/definition-of-spring-framework-and-features#2-plain-old-java-objectpojo-%EA%B8%B0%EB%B0%98%EC%9D%98-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%B4%EB%8B%A4](https://velog.io/@jummi10/definition-of-spring-framework-and-features#2-plain-old-java-objectpojo-%EA%B8%B0%EB%B0%98%EC%9D%98-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%B4%EB%8B%A4)
 - [https://velog.io/@doridam1116/Spring%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-DI-IoC-AOP-](https://velog.io/@doridam1116/Spring%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-DI-IoC-AOP-)

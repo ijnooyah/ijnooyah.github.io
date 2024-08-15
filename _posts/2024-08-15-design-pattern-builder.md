@@ -133,7 +133,7 @@ public static void main(String[] args) {
 ## 🌵 Lombok의 @Builder 사용시 주의사항
 클래스위에 `@Builder` 어노테이션을 작성할 경우 모든 멤버 변수를 받는 기본 생성자를 만들고 그에 맞춰 빌더 패턴 코드가 완성된다. id, createdAt 같은 DB가 자동적으로 생성해주는 값들을 지정할 수 있도록 열려있는 구조는 문제가 될 여지가 다분하다.
 
-**따라서 작업에 필요한 매개변수를 설정한 생성자 위에 `@Builder 어노테이션을 붙여서 사용하자.**  
+**따라서 작업에 필요한 매개변수를 설정한 생성자 위에 @Builder 어노테이션을 붙여서 사용하자.**  
 생성자 상단에 선언 시 생성자에 포함된 필드만 빌더에 포함된다.
 ```java
 public class Post {
@@ -159,8 +159,9 @@ public class Post {
 ## 👎 단점
 
 ---
-참고
-- [https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B9%8C%EB%8D%94Builder-%ED%8C%A8%ED%84%B4-%EB%81%9D%ED%8C%90%EC%99%95-%EC%A0%95%EB%A6%AC](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B9%8C%EB%8D%94Builder-%ED%8C%A8%ED%84%B4-%EB%81%9D%ED%8C%90%EC%99%95-%EC%A0%95%EB%A6%AC)
+
+<p class="ref">참고</p>
+- [https://inpa.tistory.com/entry/-💠-빌더Builder-패턴-끝판왕-정리](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B9%8C%EB%8D%94Builder-%ED%8C%A8%ED%84%B4-%EB%81%9D%ED%8C%90%EC%99%95-%EC%A0%95%EB%A6%AC)
 - [https://dev-youngjun.tistory.com/197](https://dev-youngjun.tistory.com/197)
-- [https://dalichoi.tistory.com/entry/Builder-%ED%8C%A8%ED%84%B4%EA%B3%BC-Lombok-Builder-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD](https://dalichoi.tistory.com/entry/Builder-%ED%8C%A8%ED%84%B4%EA%B3%BC-Lombok-Builder-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD)
+- [https://dalichoi.tistory.com/entry/Builder-패턴과-Lombok-Builder-사용-시-주의사항](https://dalichoi.tistory.com/entry/Builder-%ED%8C%A8%ED%84%B4%EA%B3%BC-Lombok-Builder-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD)
 

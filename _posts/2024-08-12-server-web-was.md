@@ -65,7 +65,7 @@ Web Server는 정적 리소스에 대한 요청을 캐시하고 압축
 
 ---
 
-참고
+<p class="ref">참고</p>
 - [https://velog.io/@waoderboy/%EC%9B%B9-%EC%84%9C%EB%B2%84-WAS-%EC%9B%B9-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88](https://velog.io/@waoderboy/%EC%9B%B9-%EC%84%9C%EB%B2%84-WAS-%EC%9B%B9-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)
 - [https://velog.io/@suhongkim98/CGI%EC%99%80-%EC%84%9C%EB%B8%94%EB%A6%BF-JSP%EC%9D%98-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0](https://velog.io/@suhongkim98/CGI%EC%99%80-%EC%84%9C%EB%B8%94%EB%A6%BF-JSP%EC%9D%98-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)
 - [https://hstory0208.tistory.com/entry/%EC%99%9C-WAS%EC%99%80-Web-Server%EB%A5%BC-%EA%B0%99%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B1%B8%EA%B9%8C](https://hstory0208.tistory.com/entry/%EC%99%9C-WAS%EC%99%80-Web-Server%EB%A5%BC-%EA%B0%99%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B1%B8%EA%B9%8C)

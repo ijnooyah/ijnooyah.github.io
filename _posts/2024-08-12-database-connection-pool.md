@@ -84,7 +84,7 @@ HikariCP 공식 문서에서는 아래와 같이 커넥션 풀 사이즈를 제�
 
 ---
 
-참고
+<p class="ref">참고</p>
 - [https://steady-coding.tistory.com/564](https://steady-coding.tistory.com/564)
 - [https://ssow93.tistory.com/62](https://ssow93.tistory.com/62)
 - [https://hudi.blog/dbcp-and-hikaricp/](https://hudi.blog/dbcp-and-hikaricp/)

@@ -45,7 +45,7 @@ last_modified_at: 2024-08-10
 
 ---
 
-참고
+<p class="ref">참고</p>
 - [https://yoonbing9.tistory.com/121](https://yoonbing9.tistory.com/121)
 - [https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd](https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd)
 - [https://velog.io/@sussa3007/Spring-DDD-Architecture-%EA%B8%B0%EC%B4%88](https://velog.io/@sussa3007/Spring-DDD-Architecture-%EA%B8%B0%EC%B4%88)

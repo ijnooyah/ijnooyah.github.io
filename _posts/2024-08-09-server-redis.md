@@ -41,7 +41,7 @@ Redis는 key-value 형태의 NoSQL이다.
 
 ---
 
-참고
+<p class="ref">참고</p>
 - [https://velog.io/@hope1213/Redis%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C](https://velog.io/@hope1213/Redis%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C)
 - [https://www.youtube.com/watch?v=tVZ15cCRAyE](https://www.youtube.com/watch?v=tVZ15cCRAyE)
 
