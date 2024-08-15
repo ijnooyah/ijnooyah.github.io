@@ -126,8 +126,21 @@ body {
         margin-top: -($indent-var);
       }
     }
+  }
 
-    a:before {
+  a:not(.btn) {
+    img {
+      box-shadow: 0 0 10px rgba(#000, 0.1);
+    }
+
+    &:hover {
+      color: rgba(#000, 0.7);
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.3);
+      }
+    }
+
+    &:before {
       content: '';
       background-image: url(/assets/images/chrome-icon.svg);
       display: inline-block;
@@ -140,15 +153,19 @@ body {
     }
   }
 
-  a:not(.btn) {
-    img {
-      box-shadow: 0 0 10px rgba(#000, 0.1);
-    }
+  /* 참고 */
+  .ref {
+    margin-bottom: 0px;
+  }
 
-    &:hover {
-      color: rgba(#000, 0.7);
-      img {
-        box-shadow: 0 0 10px rgba(#000, 0.3);
+  .ref + ul {
+    margin-top: 0px;
+
+    li {
+      font-size: 0.9em;
+      color: rgba(0, 0, 0, 0.85);
+      a:before {
+        content: none;
       }
     }
   }

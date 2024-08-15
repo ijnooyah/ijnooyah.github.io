@@ -573,6 +573,10 @@
       font-weight: 500;
       font-size: 100%;
     }
+
+    &:before {
+      content: none !important; 
+    }
   }
 
   li ul > li a {
