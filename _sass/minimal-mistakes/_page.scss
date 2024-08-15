@@ -126,6 +126,18 @@ body {
         margin-top: -($indent-var);
       }
     }
+
+    a:before {
+      content: '';
+      background-image: url(/assets/images/chrome-icon.svg);
+      display: inline-block;
+      margin-right: 4px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+    }
   }
 
   a:not(.btn) {
