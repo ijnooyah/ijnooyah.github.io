@@ -37,24 +37,16 @@ last_modified_at: 2024-08-16
 ## 💾 Local Cache
 - Local 장비 내에서만 사용 되는 캐시를 말한다.
 - Local 장비의 Resource를 이용한다. (Memory, Disk)
-
-**장점**
-- Local에서 작동 되기 때문에 속도가 빠르다
-
-**단점**
-- Local에서만 작동되기 때문에 다른 서버와 데이터 공유가 어렵다.
+- 장점: Local에서 작동 되기 때문에 속도가 빠르다
+- 단점: Local에서만 작동되기 때문에 다른 서버와 데이터 공유가 어렵다.
 
 ## 🌐 Global Cache
 - 여러 서버에서 Cache Server에 접근하여 사용하는 캐시
 - 데이터를 분산하여 저장할 수 있다.
   - Replication - 데이터를 복제
   - Sharding - 데이터를 분산하여 저장
-
-**장점**
-- 별도의 Cache Server를 이용하기 때문에 서버 간 데이터 공유가 쉽다.
-
-**단점**
-- Local Cache에 비해 상대적으로 느리다. (네트워크 트래픽)
+- 장점: 별도의 Cache Server를 이용하기 때문에 서버 간 데이터 공유가 쉽다.
+- 단점: Local Cache에 비해 상대적으로 느리다. (네트워크 트래픽)
 
 ---
 
