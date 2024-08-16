@@ -128,7 +128,7 @@ body {
     }
   }
 
-  a:not(.btn, .header-link) {
+  a:not(.btn) {
     img {
       box-shadow: 0 0 10px rgba(#000, 0.1);
     }
@@ -140,7 +140,7 @@ body {
       }
     }
 
-    &:before {
+    &:not(.header-link):before {
       content: '';
       background-image: url(/assets/images/chrome-icon.svg);
       display: inline-block;
@@ -165,7 +165,7 @@ body {
       font-size: 0.9em;
       color: rgba(0, 0, 0, 0.85);
       a:before {
-        content: none;
+        content: none !important;
       }
     }
   }
