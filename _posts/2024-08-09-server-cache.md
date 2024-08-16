@@ -1,5 +1,5 @@
 ---
-title: "[Server] Cache가 도대체 뭐야?"
+title: "[Server] 캐시(Cache)"
 excerpt: "캐시에 대해 알아보기"
 
 categories:
@@ -13,21 +13,52 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-09
-last_modified_at: 2024-08-09
+last_modified_at: 2024-08-16
 ---
-## 🥘 Cache
-### 1. 캐시(cache)란?
+# 🔎 캐시(cache)란?
 **데이터나 값을 미리 복사해놓는 임시 장소**를 말한다.  
 캐시에 있는 데이터는 시간과 자원 면에서 **최소한의 비용으로 반복적으로 접근**할 수 있다.
 
-### 2. 캐시 사용 이유
-### 3. 캐시 전략 패턴
-### 4. Local Cache vs Global Cache
-### 5. 캐시 사용시 주의사항
+캐시는 데이터 갱신은 자주 일어나지 않지만 참조는 자주 일어난다면 사용을 고려해볼만 하다.
+
+결국 캐시란 반복적으로 데이터를 불러오는 경우에 지속적으로 DBMS 혹은 서버에 요청하는 것이 아니라 메모리에 데이터를 저장 하였다가 불러다 쓰는 것을 의미한다. 따라서 서버나 DBMS에 부담을 덜어주고 빠르기 때문에 많은 시스템에서 사용하고 있다. 
+
+---
+
+# ✔️ 캐시의 필요성
+![long-tail](/assets/images/posts_img/server/cache/long-tail.jpeg)
+
+20%의 요구가 시스템 리소스의 대부분을 잡아먹는 법칙.  
+자주 사용되는 **20%의 기능에 캐시**를 이용하면 리소스 사용량을 대폭 줄일 수 있어, **시스템의 성능을 대폭 향상**시킬 수 있다.
+
+---
+
+# ⚔️ Local Cache vs Global Cache
+## 💾 Local Cache
+- Local 장비 내에서만 사용 되는 캐시를 말한다.
+- Local 장비의 Resource를 이용한다. (Memory, Disk)
+
+**장점**
+- Local에서 작동 되기 때문에 속도가 빠르다
+
+**단점**
+- Local에서만 작동되기 때문에 다른 서버와 데이터 공유가 어렵다.
+
+## 🌐 Global Cache
+- 여러 서버에서 Cache Server에 접근하여 사용하는 캐시
+- 데이터를 분산하여 저장할 수 있다.
+  - Replication - 데이터를 복제
+  - Sharding - 데이터를 분산하여 저장
+
+**장점**
+- 별도의 Cache Server를 이용하기 때문에 서버 간 데이터 공유가 쉽다.
+
+**단점**
+- Local Cache에 비해 상대적으로 느리다. (네트워크 트래픽)
 
 ---
 
 <p class="ref">참고</p>
-- [https://velog.io/@hope1213/Redis%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C](https://velog.io/@hope1213/Redis%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C)
+- [https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#들어가며](https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0)
 - [https://www.youtube.com/watch?v=tVZ15cCRAyE](https://www.youtube.com/watch?v=tVZ15cCRAyE)
 
