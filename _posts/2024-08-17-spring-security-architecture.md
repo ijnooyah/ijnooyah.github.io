@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-17
-last_modified_at: 2024-08-17
+last_modified_at: 2024-08-19
 ---
 <blockquote class="info">이 포스팅은 스프링 시큐리티 공식문서와 스프링 시큐리티 완전 정복(인프런 강좌)을 참고해서 작성하였다.</blockquote>
 
@@ -43,36 +43,30 @@ last_modified_at: 2024-08-17
 ---
 # 🐵 HttpSecurity
 ![HttpSecurity](/assets/images/posts_img/spring-security/architecture/HttpSecurity.png)
-- `HttpSecurityConfiguration` 에서 `HttpSecurity` 생성, 초기화
-- 보안에 필요한 각 설정 클래스와 필터들 생성
-- 최종적으로 [`SecurityFilterChain`](#-securityfilterchain) 빈 생성
+`HttpSecurityConfiguration` 에서 `HttpSecurity` 를 생성하고 초기화를 진행한다. `HttpSecurity` 는 보안에 필요한 각 설정 클래스와 필터들을 생성하고 **최종적으로 [`SecurityFilterChain`](#-securityfilterchain) 빈 생성**
 
 ---
 
 # 🐶 WebSecurity
 ![WebSecurity](/assets/images/posts_img/spring-security/architecture/WebSecurity.png)
-- `WebSecurityConfiguration` 에서 `WebSecurity` 생성, 초기화
-- [`HttpSecurity`](#-httpsecurity) 에서 생성한 [`SecurityFilterChain`](#-securityfilterchain) 빈을 `SecurityBuilder`에 저장
-- `build()` 를 실행하면 `SecurityBuilder` 에서 `SecurityFilterChain` 을 꺼내어 [`FilterChainProxy`](#-filterchainproxy) 생성자에게 전달(`FilterChainProxy` 생성)
+`WebSecurityConfiguration` 에서 `WebSecurity` 를 생성하고 초기화를 진행한다. [`HttpSecurity`](#-httpsecurity) 에서 생성한 [`SecurityFilterChain`](#-securityfilterchain) 빈을 `SecurityBuilder`에 저장한다. `build()` 를 실행하면 `SecurityBuilder` 에서 `SecurityFilterChain` 을 꺼내어 [`FilterChainProxy`](#-filterchainproxy) 생성자에게 전달한다. (`FilterChainProxy` 생성)
 
 <!-- ![debug](/assets/images/posts_img/spring-security/architecture/WebSecurity-debug.png) -->
 
 ---
 
 # 🐷 DelegatingFilterProxy
-- 스프링에서 사용되는 특별한 서블릿 필터, **서블릿 컨테이너와 스프링 애플리케이션 컨텍스트 간의 연결고리** 역할
-- [`FilterChainProxy`](#-filterchainproxy) 에게 요청을 **위임** (실제 보안 처리 수행 X)
+`DelegatingFilterProxy` 은 스프링에서 사용되는 특별한 서블릿 필터로 **서블릿 컨테이너와 스프링 애플리케이션 컨텍스트 간의 연결고리** 역할을 한다. [`FilterChainProxy`](#-filterchainproxy) 에게 요청을 **위임**한다. (실제 보안 처리 수행 X)
 
 ---
 # 🐭 FilterChainProxy
-- [`DelelatingFilterProxy`](#-delegatingfilterproxy) 로부터 요청을 위임 받음 <!--받고 보안 처리 역할을 함 -->
-- 내부적으로 하나 이상의 [`SecurityFilterChain`](#-securityfilterchain) 객체들을 가지고 있으며 요청 URL 정보를 기준으로 적절한 `SecurityFilterChain` 을 선택하여 필터들을 호출
+`FilterChainProxy` 은 [`DelelatingFilterProxy`](#-delegatingfilterproxy) 로부터 요청을 위임 받는다. <!--받고 보안 처리 역할을 함 -->
+내부적으로 하나 이상의 [`SecurityFilterChain`](#-securityfilterchain) 객체들을 가지고 있으며 요청 URL 정보를 기준으로 적절한 `SecurityFilterChain` 을 선택하여 필터들을 호출한다.
 ![FilterChainProxy](/assets/images/posts_img/spring-security/architecture/multi-securityfilterchain.png)
 
 ---
 # 🦊 SecurityFilterChain
-- [`FilterChainProxy`](#-filterchainproxy)에 등록됨
-- 현재 요청에 대해 어떤 스프링 시큐리티 `Filter` 가 호출되어야 하는지 결정
+`SecurityFilterChain` 은 [`FilterChainProxy`](#-filterchainproxy)에 의해 사용되며, 현재 요청에 대해 어떤 스프링 시큐리티 `Filter` 가 호출되어야 하는지 결정한다.
 - `List<Filter> getFilters()`: 현재 `SecurityFilterChain`에 포함된 `Filter` 객체의 리스트 반환
 - `boolean matches(HttpServletRequest request)`: 요청이 현재 `SecurityFilterChain`에 의해 처리되어야 하는지 여부를 결정 
 
@@ -90,9 +84,9 @@ public class SecurityConfig {
   }
 }
 ```
-- `@EnableWebSecurity`을 클래스에 정의
-- 모든 설정 코드는 람다 형식으로 작성 (스프링 시큐리티 7버전 부터는 람다 형식만 지원할 예정)
-- [`SecurityFilterChain`](#-securityfilterchain) 을 빈으로 정의하게 되면 자동설정에 의한 `SecurityFilterChain` 빈은 생성되지 않음
+- `@EnableWebSecurity`을 클래스에 정의한다.
+- 모든 설정 코드는 람다 형식으로 작성한다. (스프링 시큐리티 7버전 부터는 람다 형식만 지원할 예정)
+- [`SecurityFilterChain`](#-securityfilterchain) 을 빈으로 정의하게 되면 자동설정에 의한 `SecurityFilterChain` 빈은 생성되지 않는다.
 
 ---
 
