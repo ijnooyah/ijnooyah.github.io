@@ -60,6 +60,7 @@ $base0f: #cc6633 !default;
 .page__content {
   a,
   a:visited {
+    text-underline-position: under;
     color: inherit;
   }
 }
