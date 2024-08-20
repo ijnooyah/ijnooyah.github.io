@@ -1,5 +1,5 @@
 ---
-title: "[Spring Security] 인증(Authentication) 아키텍처"
+title: "[Spring Security] 인증 아키텍처"
 excerpt: ""
 
 categories:
@@ -101,7 +101,7 @@ SecurityContextHolder에 설정: 반환된 Authentication 객체는 Spring Secur
     - `AuthenticationFailureHandler` 가 호출된다.
 4. 인증이 성공하면 다음과 같은 처리가 이루어진다.
     - `SessionAuthenticationStrategy` 가 새로운 로그인을 알린다.
-    - `Authentication` 이 `SecurityContextHolder` 에 설정된다. 나중에 [`SecurityContext`](#-securitycontext) 를 저장해 향후 요청에서 자동으로 설정할 수 있도록 하려면 [`SecurityContextRepository#saveContext`](https://ijnooyah.github.io/spring-security/authentication-persistence/#-securitycontextholderfilter) 를 명시적으로 호출해야 한다. 
+    - `Authentication` 이 `SecurityContextHolder` 에 설정된다. 나중에 [`SecurityContext`](#-securitycontext) 를 저장해 향후 요청에서 자동으로 설정할 수 있도록 하려면 [`SecurityContextRepository#saveContext`](https://ijnooyah.github.io/spring-security/authentication-persistence/#-securitycontextholderfilter){: target="_blank"} 를 명시적으로 호출해야 한다. 
     - `RememberMeServices.loginSuccess` 가 호출된다. "Remember Me"가 구성되지 않은 경우, 이 호출은 무시된다. 
     - `ApplicationEventPublisher` 가 `InteractiveAuthenticationSuccessEvent` 를 게시한다.
     - `AuthenticationSuccessHandler` 가 호출된다.
@@ -109,6 +109,6 @@ SecurityContextHolder에 설정: 반환된 Authentication 객체는 Spring Secur
 ---
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 
