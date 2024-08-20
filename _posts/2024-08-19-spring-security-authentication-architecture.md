@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-19
-last_modified_at: 2024-08-19
+last_modified_at: 2024-08-20
 ---
 <blockquote class="info">이 포스팅은 스프링 시큐리티 공식문서와 스프링 시큐리티 완전 정복(인프런 강좌)을 참고해서 작성하였다.</blockquote>
 
@@ -101,7 +101,7 @@ SecurityContextHolder에 설정: 반환된 Authentication 객체는 Spring Secur
     - `AuthenticationFailureHandler` 가 호출된다.
 4. 인증이 성공하면 다음과 같은 처리가 이루어진다.
     - `SessionAuthenticationStrategy` 가 새로운 로그인을 알린다.
-    - `Authentication` 이 `SecurityContextHolder` 에 설정된다. 나중에 [`SecurityContext`](#-securitycontext) 를 저장해 향후 요청에서 자동으로 설정할 수 있도록 하려면 `SecurityContextRepository#saveContext` 를 명시적으로 호출해야 한다. 
+    - `Authentication` 이 `SecurityContextHolder` 에 설정된다. 나중에 [`SecurityContext`](#-securitycontext) 를 저장해 향후 요청에서 자동으로 설정할 수 있도록 하려면 [`SecurityContextRepository#saveContext`](https://ijnooyah.github.io/spring-security/authentication-persistence/#-securitycontextholderfilter) 를 명시적으로 호출해야 한다. 
     - `RememberMeServices.loginSuccess` 가 호출된다. "Remember Me"가 구성되지 않은 경우, 이 호출은 무시된다. 
     - `ApplicationEventPublisher` 가 `InteractiveAuthenticationSuccessEvent` 를 게시한다.
     - `AuthenticationSuccessHandler` 가 호출된다.
