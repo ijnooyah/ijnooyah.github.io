@@ -91,7 +91,7 @@ figure.highlight {
   }
   .cm {
     /* Comment.Multiline */
-    color: $base04;
+    color: #979797; // $base04;
   }
   .cp {
     /* Comment.Preproc */
@@ -99,7 +99,7 @@ figure.highlight {
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: #979797; // $base04
   }
   .cs {
     /* Comment.Special */
