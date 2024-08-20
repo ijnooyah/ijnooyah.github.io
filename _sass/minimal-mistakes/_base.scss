@@ -225,7 +225,7 @@ td > code {
   margin-right: 0.1em;
   font-family: $monospace;
   font-weight: 400; // 500
-  background-color: rgba(240 240 240 / 84%); // $code-background-color-dark
+  background-color: rgba(240, 240, 240, .84); // $code-background-color-dark
   color: $text-color;
   border-radius: 2px;
   
