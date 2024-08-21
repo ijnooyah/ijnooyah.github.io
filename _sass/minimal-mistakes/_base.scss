@@ -145,6 +145,37 @@ blockquote {
   }
 }
 
+/* 참고 인용 */
+blockquote.ref {
+  margin: 1.5em 1em 1.5em 0em;
+  padding: 0.7em 1em 0.7em 1.5em;
+  background-color: rgba(180, 180, 180, .1);
+
+  border-left: 0.25em solid #afafaf;
+
+  cite {
+    font-style: italic;
+
+    &:before {
+      content: "\2014";
+      padding-right: 5px;
+    }
+  }
+
+  hr {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+  :first-child {
+    margin-top: 0px;
+  }
+
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
 /* 파란색 인용 */
 blockquote.info {
   margin: 1.5em 1em 1.5em 0em;

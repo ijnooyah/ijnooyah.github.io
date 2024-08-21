@@ -169,7 +169,7 @@
     }
 
     /* 참고 */
-    .ref {
+    .ref:not(blockquote) {
       margin-bottom: 0px;
       font-size: 0.9em;
       color: rgba(0, 0, 0, 0.7);
