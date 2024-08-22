@@ -1,19 +1,19 @@
 ---
-title: "[Server] 캐시(Cache)"
-excerpt: "캐시에 대해 알아보기"
+title: "[Redis] 캐시(Cache)"
+excerpt: ""
 
 categories:
-  - Server
+  - Redis
 tags:
-  - [Server]
+  - [Redis]
 
-permalink: /server/cache/
+permalink: /redis/cache/
 
 toc: true
 toc_sticky: true
 
 date: 2024-08-09
-last_modified_at: 2024-08-16
+last_modified_at: 2024-08-22
 ---
 # 🔎 캐시(cache)란?
 **데이터나 값을 미리 복사해놓는 임시 장소**를 말한다.  

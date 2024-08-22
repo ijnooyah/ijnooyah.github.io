@@ -34,6 +34,8 @@ categories:
     url: /categories/java/
   - title: "Network"
     url: /categories/network/
+  - title: "Redis"
+    url: /categories/redis/
   - title: "Server"
     url: /categories/server/
   - title: "Spring"

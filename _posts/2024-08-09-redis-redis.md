@@ -1,19 +1,19 @@
 ---
-title: "[Server] Redis가 도대체 뭐야?"
-excerpt: "Redis에 대해 알아보기"
+title: "[Redis] Redis"
+excerpt: ""
 
 categories:
-  - Server
+  - Redis
 tags:
-  - [Server]
+  - [Redis]
 
-permalink: /server/redis/
+permalink: /redis/redis/
 
 toc: true
 toc_sticky: true
 
 date: 2024-08-09
-last_modified_at: 2024-08-09
+last_modified_at: 2024-08-22
 ---
 ## 🚗 Redis
 ### 1. Redis란?
