@@ -26,7 +26,7 @@ last_modified_at: 2024-08-22
 ---
 
 # ✔️ 캐시의 필요성
-![long-tail](/assets/images/posts_img/server/cache/long-tail.jpeg)
+![long-tail](/assets/images/posts_img/redis/cache/long-tail.jpeg)
 
 20%의 요구가 시스템 리소스의 대부분을 잡아먹는 법칙.  
 자주 사용되는 **20%의 기능에 캐시**를 이용하면 리소스 사용량을 대폭 줄일 수 있어, **시스템의 성능을 대폭 향상**시킬 수 있다.
