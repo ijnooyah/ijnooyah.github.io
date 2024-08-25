@@ -1,6 +1,6 @@
 ---
-title: "[Spring Security] Spring Security 기본 용어"
-excerpt: "인증, 인가, Principal, Credential"
+title: "[Spring Security] 스프링 시큐리티 기본 용어"
+excerpt: "인증, 인가"
 
 categories:
   - Spring Security
