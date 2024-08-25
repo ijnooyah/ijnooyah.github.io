@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-12
-last_modified_at: 2024-08-12
+last_modified_at: 2024-08-25
 ---
 커넥션 풀을 알아보기 전에 먼저 데이터베이스(DB) 커넥션과 JDBC를 알아보자.  
 
@@ -72,8 +72,9 @@ Connection의 주체는 Thread이기 때문에 Thread와 함께 고려해야 한
   - Thread 증가로 인해 더 많은 Context Switching이 발생해 부정적인 영향을 미칠 수 있다.
 
 ## 🌺 적절한 Connection Pool 크기 설정
-HikariCP 공식 문서에서는 아래와 같이 커넥션 풀 사이즈를 제안한다.
-> connection = ((core_count) * 2) + effective_spindle_count  
+HikariCP 공식 문서에서는 아래와 같이 커넥션 풀 사이즈를 제안한다.  
+
+$connection = ((core\_count) * 2) + effective\_spindle\_count$
 
 `core_count`: 현재 사용하는 서버 환경에서의 CPU 개수  
 `effective_spindle_count`: DB서버가 동시 관리할 수 있는 I/O 요청 수
