@@ -21,6 +21,7 @@ last_modified_at: 2024-08-22
 
 # 🌞 SecurityContextRepository
 ![SecurityContextRepository](/assets/images/posts_img/spring-security/authentication-persistence/securitycotextrepository.png)
+
 `SecurityContextRepository` 는 스프링 시큐리티에서 사용자가 인증을 한 이후 요청에 대해 계속 사용자의 인증을 유지하기 위해 사용되는 클래스다. 
 
 ## 🚝 HttpSessionSecurityContextRepository

@@ -43,12 +43,14 @@ last_modified_at: 2024-08-19
 ---
 # 🐵 HttpSecurity
 ![HttpSecurity](/assets/images/posts_img/spring-security/architecture/HttpSecurity.png)
+
 `HttpSecurityConfiguration` 에서 `HttpSecurity` 를 생성하고 초기화를 진행한다. `HttpSecurity` 는 보안에 필요한 각 설정 클래스와 필터들을 생성하고 **최종적으로 [`SecurityFilterChain`](#-securityfilterchain) 빈 생성**
 
 ---
 
 # 🐶 WebSecurity
 ![WebSecurity](/assets/images/posts_img/spring-security/architecture/WebSecurity.png)
+
 `WebSecurityConfiguration` 에서 `WebSecurity` 를 생성하고 초기화를 진행한다. [`HttpSecurity`](#-httpsecurity) 에서 생성한 [`SecurityFilterChain`](#-securityfilterchain) 빈을 `SecurityBuilder`에 저장한다. `build()` 를 실행하면 `SecurityBuilder` 에서 `SecurityFilterChain` 을 꺼내어 [`FilterChainProxy`](#-filterchainproxy) 생성자에게 전달한다. (`FilterChainProxy` 생성)
 
 <!-- ![debug](/assets/images/posts_img/spring-security/architecture/WebSecurity-debug.png) -->
@@ -62,6 +64,7 @@ last_modified_at: 2024-08-19
 # 🐭 FilterChainProxy
 `FilterChainProxy` 는 [`DelelatingFilterProxy`](#-delegatingfilterproxy) 로부터 요청을 위임 받는다. <!--받고 보안 처리 역할을 함 -->
 내부적으로 하나 이상의 [`SecurityFilterChain`](#-securityfilterchain) 객체들을 가지고 있으며 요청 URL 정보를 기준으로 적절한 `SecurityFilterChain` 을 선택하여 필터들을 호출한다.
+
 ![FilterChainProxy](/assets/images/posts_img/spring-security/architecture/multi-securityfilterchain.png)
 
 ---
