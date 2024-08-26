@@ -131,8 +131,12 @@
     /* 이미지&캡션 */
     p:has(img) {
       text-align: center;
+      color: $dark-gray;
       margin: 0 auto;
       font-size: .8em;
+    }
+    p > img {
+      display:block;
     }
   
     a:not(.btn) {
