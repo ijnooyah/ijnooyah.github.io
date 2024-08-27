@@ -41,7 +41,7 @@ Collection<? extends GrantedAuthority> authorities = authentication.getAuthoriti
 <!-- 기본적으로 `SecurityContextHolder` 는 `ThreadLocal` 을 사용해 이러한 세부 정보를 저장한다. 이로 인해 `SecurityContext` 는 동일한 스레드의 메서드(methods)에서 항상 사용할 수 있으며, 해당 메서드에 `SecurityContext` 가 명시적으로 인자로 전달되지 않더라도 마찬가지다. 현재 주체의 요청이 처리된 후 스레드를 지우도록 주의를 기울인다면 이러한 방식으로 TreadLocal을 사용하는 것은 매우 안전하다. [FilterChainProxy](https://ijnooyah.github.io/spring-security/architecture/#-filterchainproxy) 는 SecurityContext 가 항상 지워지도록 보장한다. -->
 
 기본적으로 `SecurityContextHolder` 는 `ThreadLocal` 을 사용해 보안 컨텍스트를 저장한다. `ThreadLocal` 을 사용하면 각 스레드가 독립적인 `SecurityContext` 를 가지게 되며, 동일한 스레드 내의 메서드에서 `SecurityContext` 에 접근할 수 있다.  <!-- 이는 메서드 인자로 `SecurityContext` 를 명시적으로 전달하지 않아도 되게 한다. 이 방식은 동일한 스레드 내의 메서드에서 항상 `SecurityContext` 를 사용할 수 있게 해준다. 즉, 메서드에 `SecurityContext` 가 명시적으로 인자로 전달되지 않더라도 해당 스레드에서는 `SecurityContext` 에 접근 할 수 있다. 이 접근 방식은 스레드 로컬 변수를 활용해 안전하고 효율적으로 인증 정보를 관리한다. -->  
-그러나 `ThreadLocal` 은 스레드가 종료되면 자동으로 정리되지 않으므로 애플리케이션이 스레드를 재사용하거나 스레드 풀이 있는 환경에서는 주의를 기울여야 한다. [`FilterChainProxy`](https://ijnooyah.github.io/spring-security/architecture/#-filterchainproxy) 는 `SecurityContext` 가 항상 적절히 지워지도록 보장해 이러한 문제를 방지한다. 
+그러나 `ThreadLocal` 은 스레드가 종료되면 자동으로 정리되지 않으므로 애플리케이션이 스레드를 재사용하거나 스레드 풀이 있는 환경에서는 주의를 기울여야 한다. [`FilterChainProxy`](https://ijnooyah.github.io/spring-security/architecture/#-filterchainproxy){: target="_blank"} 는 `SecurityContext` 가 항상 적절히 지워지도록 보장해 이러한 문제를 방지한다. 
 
 `SecurityContextHolder` 는 `SecurityContext` 를 저장하는 다양한 전략을 제공한다. `SecurityContextHolder.MODE_THREADLOCAL` 은 기본값으로 각 스레드가 독립적인 보안 컨텍스트를 가지며 대부분의 서버 환경에 적합하다. 이외에도 `MODE_INHERITABLETHREADLOCAL`(하위 스레드가 부모 스레드의 보안 컨텍스트를 상속 받음)과 `MODE_GLOBAL`(모든 스레드가 공유하는 전역 보안 컨텍스트) 전략이 있으며 필요에 따라 선택할 수 있다. 
 

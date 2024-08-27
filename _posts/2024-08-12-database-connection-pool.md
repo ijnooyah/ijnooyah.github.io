@@ -86,7 +86,7 @@ $connection = ((core\_count) * 2) + effective\_spindle\_count$
 ---
 
 <p class="ref">참고</p>
-- [https://steady-coding.tistory.com/564](https://steady-coding.tistory.com/564)
-- [https://ssow93.tistory.com/62](https://ssow93.tistory.com/62)
-- [https://hudi.blog/dbcp-and-hikaricp/](https://hudi.blog/dbcp-and-hikaricp/)
+- [https://steady-coding.tistory.com/564](https://steady-coding.tistory.com/564){: target="_blank"}
+- [https://ssow93.tistory.com/62](https://ssow93.tistory.com/62){: target="_blank"}
+- [https://hudi.blog/dbcp-and-hikaricp/](https://hudi.blog/dbcp-and-hikaricp/){: target="_blank"}
 

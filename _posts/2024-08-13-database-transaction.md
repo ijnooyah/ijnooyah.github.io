@@ -41,6 +41,6 @@ SELECT, UPDATE, INSERT, DELETE 와 같은 쿼리를 날려 연산을 수행하�
 ---
 
 <p class="ref">참고</p>
-- [https://gyoogle.dev/blog/computer-science/data-base/Transaction.html](https://gyoogle.dev/blog/computer-science/data-base/Transaction.html)
-- [https://mommoo.tistory.com/62](https://mommoo.tistory.com/62)
+- [https://gyoogle.dev/blog/computer-science/data-base/Transaction.html](https://gyoogle.dev/blog/computer-science/data-base/Transaction.html){: target="_blank"}
+- [https://mommoo.tistory.com/62](https://mommoo.tistory.com/62){: target="_blank"}
 

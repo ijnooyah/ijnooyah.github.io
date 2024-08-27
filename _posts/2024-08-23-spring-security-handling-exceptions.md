@@ -20,13 +20,13 @@ last_modified_at: 2024-08-23
 ---
 # 🛡️ 예외 처리
 `ExceptionTranslationFilter`는 보안 관련 예외를 적절한 HTTP 응답(401, 403 코드 등)으로 변환하는 역할을 한다.  
-이 필터는 [`FilterChainProxy`](https://ijnooyah.github.io/spring-security/architecture/#-filterchainproxy)에 포함되어 있으며, `AuthenticationException`(인증 예외)과 `AccessDeniedException`(인가 예외)을 처리한다.
+이 필터는 [`FilterChainProxy`](https://ijnooyah.github.io/spring-security/architecture/#-filterchainproxy){: target="_blank"}에 포함되어 있으며, `AuthenticationException`(인증 예외)과 `AccessDeniedException`(인가 예외)을 처리한다.
 
 ![예외 처리](/assets/images/posts_img/spring-security/handling-exceptions/exceptiontranslationfilter.png)
 
 1. `ExceptionTranslationFilter`는 먼저 `FilterChain.doFilter(request, response)`를 호출하여 애플리케이션의 다른 부분들이 요청을 처리할 수 있도록 한다.
 2. 사용자가 인증되지 않았거나 `AuthenticationException`(인증 예외)이 발생하면 *인증 프로세스를 시작한다*.
-    - [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder)를 비운다. (현재 보안 컨텍스트 초기화)
+    - [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder){: target="_blank"}를 비운다. (현재 보안 컨텍스트 초기화)
     - `HttpServletRequest`를 저장한다. 이는 인증이 성공적으로 완료된 후 원래 요청을 다시 처리할 수 있게 하기 위함이다.
     - [`AuthenticationEntryPoint`](#-authenticationentrypoint)를 사용하여 클라이언트에게 인증을 요청한다. 보통 로그인 페이지로 리다이렉트하거나 `WWW-Authenticate` 헤더를 보낸다.
 3. 반면 `AccessDeniedException`(인가 예외)이 발생하면 *접근이 거부된다*. `AccessDeniedHandler`가 호출되어 접근 거부를 처리한다.
@@ -46,6 +46,6 @@ last_modified_at: 2024-08-23
 ---
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 

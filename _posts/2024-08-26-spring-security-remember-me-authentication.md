@@ -20,7 +20,7 @@ last_modified_at: 2024-08-26
 ---
 # 💾  Remember Me 인증
 사용자가 웹 사이트나 애플리케이션에 로그인할 때 자동으로 인증 정보를 기억하는 기능이다.  
-[`UsernamePasswordAuthenticationFilter`](https://ijnooyah.github.io/spring-security/form-based-authentication/#-%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84)와 함께 사용되며, `AbsractAuthenticationProcessingFilter` 슈퍼클래스에서 훅을 통해 구현된다.
+[`UsernamePasswordAuthenticationFilter`](https://ijnooyah.github.io/spring-security/form-based-authentication/#-%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84){: target="_blank"}와 함께 사용되며, `AbsractAuthenticationProcessingFilter` 슈퍼클래스에서 훅을 통해 구현된다.
 - 인증 성공 시: `RememberMeServices.loginSuccess()`를 통해 RememberMe 토큰을 생성하고 쿠키로 전달한다.
 - 인증 실패 시: `RememberMeServices.loginFail()`를 통해 쿠키를 지운다.
 - `LogoutFilter`와 연계해서 로그아웃 시 쿠키를 지운다.
@@ -41,6 +41,6 @@ last_modified_at: 2024-08-26
 
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 

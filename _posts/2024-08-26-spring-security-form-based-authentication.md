@@ -19,16 +19,16 @@ last_modified_at: 2024-08-26
 
 ---
 # 🌊 폼 기반 인증 흐름
-스프링 시큐리티에서 폼 기반 인증은 주로 `UsernamePasswordAuthenticationFilter`를 통해 처리된다. `UsernamePasswordAuthenticationFilter`는 `AbstractAuthenticationProcessingFilter`를 상속받아 구현되었으며, [기본적인 인증 흐름](https://ijnooyah.github.io/spring-security/authentication-architecture/#-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84authentication-flow)을 따른다.
+스프링 시큐리티에서 폼 기반 인증은 주로 `UsernamePasswordAuthenticationFilter`를 통해 처리된다. `UsernamePasswordAuthenticationFilter`는 `AbstractAuthenticationProcessingFilter`를 상속받아 구현되었으며, [기본적인 인증 흐름](https://ijnooyah.github.io/spring-security/authentication-architecture/#-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84authentication-flow){: target="_blank"}을 따른다.
 
 ![Authenticating Username and Password](/assets/images/posts_img/spring-security/form-based-authentication/usernamepasswordauthenticationfilter.png)사용자이름과 비밀번호를 이용한 인증 과정
 
-**1.** 사용자가 로그인 정보를 제출하면, `UsernamePasswordAuthenticationFilter`가 `HttpServletRequest`에서 사용자이름과 비밀번호를 추출해 `UsernamePasswordAuthenticationToken`([`Authentication`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-authentication)의 한 종류)을 생성한다.  
+**1.** 사용자가 로그인 정보를 제출하면, `UsernamePasswordAuthenticationFilter`가 `HttpServletRequest`에서 사용자이름과 비밀번호를 추출해 `UsernamePasswordAuthenticationToken`([`Authentication`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-authentication){: target="_blank"}의 한 종류)을 생성한다.  
 
-**2.** 생성된 `UsernamePasswordAuthenticationToken`은 [`AuthenticationManager`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-authenticationmanager)에 전달되어 실제 인증 작업이 이루어진다.   
+**2.** 생성된 `UsernamePasswordAuthenticationToken`은 [`AuthenticationManager`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-authenticationmanager){: target="_blank"}에 전달되어 실제 인증 작업이 이루어진다.   
 
 **3.** 인증이 실패 시:
-1. [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder)의 내용이 지워진다.
+1. [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder){: target="_blank"}의 내용이 지워진다.
 2. `RememberMeServices.loginFail`이 호출된다.(Remember me 기능이 설정된 경우에만 동작)
 3. `AuthenticationFailureHandler`가 호출된다.  
 
@@ -71,6 +71,6 @@ public SecurityFilterChain filterChain(HttpSecurity http) {
 ---
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 

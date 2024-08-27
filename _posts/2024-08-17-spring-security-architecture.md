@@ -22,7 +22,7 @@ last_modified_at: 2024-08-19
 - 스프링 시큐리티 공식 문서 -
 </blockquote>
 
-공식 문서에서 스프링 시큐리티는 서블릿 필터가 바탕이라고 한다. 따라서 [필터](https://ijnooyah.github.io/spring/filter/)를 먼저 알고 가는 것이 도움이 된다.  
+공식 문서에서 스프링 시큐리티는 서블릿 필터가 바탕이라고 한다. 따라서 [필터](https://ijnooyah.github.io/spring/filter/){: target="_blank"}를 먼저 알고 가는 것이 도움이 된다.  
 
 참고로 스프링 시큐리티는 별도의 설정을 하지 않아도 스프링 시큐리티의 기본적인 웹 보안 기능이 작동한다.
 
@@ -94,6 +94,6 @@ public class SecurityConfig {
 ---
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 

@@ -46,8 +46,8 @@ last_modified_at: 2024-08-10
 ---
 
 <p class="ref">참고</p>
-- [https://yoonbing9.tistory.com/121](https://yoonbing9.tistory.com/121)
-- [https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd](https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd)
-- [https://velog.io/@sussa3007/Spring-DDD-Architecture-%EA%B8%B0%EC%B4%88](https://velog.io/@sussa3007/Spring-DDD-Architecture-%EA%B8%B0%EC%B4%88)
-- [https://velog.io/@hope0206/DDD-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%A3%BC%EB%8F%84-%EC%84%A4%EA%B3%84-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8Aggregate-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0](https://velog.io/@hope0206/DDD-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%A3%BC%EB%8F%84-%EC%84%A4%EA%B3%84-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8Aggregate-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)
+- [https://yoonbing9.tistory.com/121](https://yoonbing9.tistory.com/121){: target="_blank"}
+- [https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd](https://incheol-jung.gitbook.io/docs/q-and-a/architecture/ddd){: target="_blank"}
+- [https://velog.io/@sussa3007/Spring-DDD-Architecture-기초](https://velog.io/@sussa3007/Spring-DDD-Architecture-%EA%B8%B0%EC%B4%88){: target="_blank"}
+- [https://velog.io/@hope0206/DDD-도메인-주도-설계-애그리거트Aggregate-알아보기](https://velog.io/@hope0206/DDD-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%A3%BC%EB%8F%84-%EC%84%A4%EA%B3%84-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8Aggregate-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0){: target="_blank"}
 

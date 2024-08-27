@@ -25,7 +25,7 @@ last_modified_at: 2024-08-22
 `SecurityContextRepository` 는 스프링 시큐리티에서 사용자가 인증을 한 이후 요청에 대해 계속 사용자의 인증을 유지하기 위해 사용되는 클래스다. 
 
 ## 🚝 HttpSessionSecurityContextRepository
-`HttpSession` 에 [`SecruityContext`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontext) 를 저장한다.
+`HttpSession` 에 [`SecruityContext`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontext){: target="_blank"} 를 저장한다.
 
 ## 💌 RequestAttributeSecurityContextRepository
 `ServletRequest` 에 `SecurityContext` 를 저장한다. 단일 요청 내에서는 `SecurityContext` 가 유효하다. (새로운 요청시 X)
@@ -55,7 +55,7 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 
 # 👜 SecurityContextHolderFilter
-`SecurityContextHolderFilter` 는 [`SecurityContextRepository`](#-securitycontextrepository) 에서 [`SecurityContext`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontext) 를 가져와 [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder) 에 설정하는 필터다. 
+`SecurityContextHolderFilter` 는 [`SecurityContextRepository`](#-securitycontextrepository) 에서 [`SecurityContext`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontext){: target="_blank"} 를 가져와 [`SecurityContextHolder`](https://ijnooyah.github.io/spring-security/authentication-architecture/#-securitycontextholder){: target="_blank"} 에 설정하는 필터다. 
 
 ![SecurityContextHolderFilter](/assets/images/posts_img/spring-security/authentication-persistence/securitycontextholderfilter.png)
 
@@ -78,6 +78,6 @@ securityContextRepository.saveContext(securityContext, httpServletRequest, httpS
 ---
 
 <p class="ref">참고</p>
-- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html)
-- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)
+- [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/architecture.html){: target="_blank"}
+- [스프링 시큐리티 완전 정복](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard){: target="_blank"}
 

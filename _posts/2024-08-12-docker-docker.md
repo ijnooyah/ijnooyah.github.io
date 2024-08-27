@@ -46,9 +46,9 @@ Docker 컨테이너 이미지는 애플리케이션을 실행하는데 필요한
 ---
 
 <p class="ref">참고</p>
-- [https://terms.naver.com/entry.naver?docId=3578612&cid=59088&categoryId=59096](https://terms.naver.com/entry.naver?docId=3578612&cid=59088&categoryId=59096)
-- [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
-- [https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
-- [https://tecoble.techcourse.co.kr/post/2021-08-14-docker/](https://tecoble.techcourse.co.kr/post/2021-08-14-docker/)
-- [https://devlog-wjdrbs96.tistory.com/279](https://devlog-wjdrbs96.tistory.com/279)
+- [https://terms.naver.com/entry.naver?docId=3578612&cid=59088&categoryId=59096](https://terms.naver.com/entry.naver?docId=3578612&cid=59088&categoryId=59096){: target="_blank"}
+- [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/){: target="_blank"}
+- [https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html){: target="_blank"}
+- [https://tecoble.techcourse.co.kr/post/2021-08-14-docker/](https://tecoble.techcourse.co.kr/post/2021-08-14-docker/){: target="_blank"}
+- [https://devlog-wjdrbs96.tistory.com/279](https://devlog-wjdrbs96.tistory.com/279){: target="_blank"}
 
