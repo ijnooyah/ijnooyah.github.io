@@ -51,6 +51,6 @@ last_modified_at: 2024-08-22
 ---
 
 <p class="ref">참고</p>
-- [https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#들어가며](https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0)
-- [https://www.youtube.com/watch?v=tVZ15cCRAyE](https://www.youtube.com/watch?v=tVZ15cCRAyE)
+- [https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#들어가며](https://jaehun2841.github.io/2018/11/07/2018-10-03-spring-ehcache/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0){: target="_blank"}
+- [https://www.youtube.com/watch?v=tVZ15cCRAyE](https://www.youtube.com/watch?v=tVZ15cCRAyE){: target="_blank"}
 
