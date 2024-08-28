@@ -1,5 +1,5 @@
 ---
-title: "[Spring Security] 스프링 시큐리티 아키텍처"
+title: "[Spring Security] 아키텍처"
 excerpt: ""
 
 categories:
