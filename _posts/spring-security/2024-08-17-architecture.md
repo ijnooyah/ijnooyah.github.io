@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-17
-last_modified_at: 2024-08-19
+last_modified_at: 2024-08-28
 ---
 <blockquote class="info">이 포스팅은 스프링 시큐리티 공식문서와 스프링 시큐리티 완전 정복(인프런 강좌)을 참고해서 작성하였다.</blockquote>
 
@@ -22,7 +22,7 @@ last_modified_at: 2024-08-19
 - 스프링 시큐리티 공식 문서 -
 </blockquote>
 
-공식 문서에서 스프링 시큐리티는 서블릿 필터가 바탕이라고 한다. 따라서 [필터](https://ijnooyah.github.io/spring/filter/){: target="_blank"}를 먼저 알고 가는 것이 도움이 된다.  
+공식 문서에서 스프링 시큐리티는 서블릿 필터가 바탕이라고 한다. 따라서 [필터](https://ijnooyah.github.io/java/filter/){: target="_blank"}를 먼저 알고 가는 것이 도움이 된다.  
 
 참고로 스프링 시큐리티는 별도의 설정을 하지 않아도 스프링 시큐리티의 기본적인 웹 보안 기능이 작동한다.
 
