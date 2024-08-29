@@ -246,7 +246,6 @@ pre {
 }
 
 p > code,
-a > code,
 li > code,
 figcaption > code,
 blockquote > code, // 추가
@@ -258,6 +257,23 @@ td > code {
   font-weight: 500;
   background-color: $code-background-color-dark;
   color: $text-color;
+  border-radius: 2px;
+  
+  &:before,
+  &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; /* non-breaking space*/
+  }
+}
+
+/* a tag css*/
+a > code {
+  font-size: 0.85em;
+  padding: 0.15em 0.05em 0.15em 0.05em;
+  margin-right: 0.1em;
+  font-family: $monospace;
+  font-weight: 400;
+  background-color: $code-background-color-dark;
   border-radius: 2px;
   
   &:before,

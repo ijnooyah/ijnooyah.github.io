@@ -144,12 +144,12 @@
         box-shadow: 0 0 10px rgba(#000, 0.1);
       }
   
-      &:hover {
-        color: rgba(#000, 0.7);
-        img {
-          box-shadow: 0 0 10px rgba(#000, 0.3);
-        }
-      }
+      // &:hover {
+      //   color: rgba(#000, 0.7);
+      //   img {
+      //     box-shadow: 0 0 10px rgba(#000, 0.3);
+      //   }
+      // }
     }
   
     dt {
@@ -191,10 +191,13 @@
 
       li {
         font-size: 0.88em;
-        color: rgba(0, 0, 0, 0.7);
         list-style-type: "🔗";
         a {
+          color: rgba(0, 0, 0, 0.7) !important;
           text-decoration: none;
+          &:hover {
+            text-decoration: underline !important;
+          }
         }
       }
     }
