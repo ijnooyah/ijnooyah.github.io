@@ -13,9 +13,10 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-20
-last_modified_at: 2024-08-22
+last_modified_at: 2024-08-29
 ---
-<blockquote class="info">이 포스팅은 스프링 시큐리티 공식문서와 스프링 시큐리티 완전 정복(인프런 강좌)을 참고해서 작성하였다.</blockquote>
+
+{% include spring-security-list.md %}
 
 ---
 

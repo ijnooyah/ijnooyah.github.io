@@ -15,7 +15,8 @@ toc_sticky: true
 date: 2024-08-29
 last_modified_at: 2024-08-29
 ---
-<blockquote class="info">이 포스팅은 스프링 시큐리티 공식문서와 스프링 시큐리티 완전 정복(인프런 강좌)을 참고해서 작성하였다.</blockquote>
+
+{% include spring-security-list.md %}
 
 ---
 # 🏛️ GrantedAuthority
@@ -94,6 +95,7 @@ static MethodSecurityExpressionHandler methodSecurityExpressionHandler(RoleHiera
 # 🦖 AccessDecisionManager와 AccessDecisionVoter
 `AuthorizationManager`는 Spring Security 5.5부터 도입된 새로운 인가 결정 인터페이스이다. `AccessDecisionManager`와 `AccessDecisionVoter`를 대체해서 얻은 장점 설명은 추후 서술하겠다.
 
+---
 
 <p class="ref">참고</p>
 - [스프링 시큐리티 공식문서](https://docs.spring.io/spring-security/reference/servlet/authorization/architecture.html){: target="_blank"}
