@@ -8,3 +8,4 @@
    7. [기억하기 인증](https://ijnooyah.github.io/spring-security/remember-me-authentication/)
    8. [인증 간 요청 저장](https://ijnooyah.github.io/spring-security/handling-exceptions/)
    9. [인가 아키텍처](https://ijnooyah.github.io/spring-security/authorization-architecture/)
+   10. [요청 수준 인가 & 메소드 수준 인가](https://ijnooyah.github.io/spring-security/request-and-method-authorization/)
