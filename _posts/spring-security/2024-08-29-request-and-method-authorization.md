@@ -12,8 +12,8 @@ permalink: /spring-security/request-and-method-authorization/
 toc: true
 toc_sticky: true
 
-date: 2024-08-29
-last_modified_at: 2024-08-29
+date: 2024-08-30
+last_modified_at: 2024-08-30
 ---
 
 {% include spring-security-list.md %}
@@ -50,6 +50,8 @@ http
     )
 ```
 위 코드는 가장 기본적인 인가 규칙을 설정하는 예시로, 모든 엔드포인트(`anyRequest()`)가 최소한 보안 컨텍스트에서 인증되어야(`authenticated()`) 요청을 허용한다고 알려준다.
+
+---
 
 ## 🔍 요청 수준 인가 작동 방식
 
