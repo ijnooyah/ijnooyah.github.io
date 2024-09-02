@@ -254,8 +254,8 @@ td > code {
   padding: 0.15em 0.05em 0.15em 0.05em;
   margin-right: 0.1em;
   font-family: $monospace;
-  font-weight: 500;
-  background-color: $code-background-color-dark;
+  font-weight: 400;
+  background-color: $code-background-color;
   color: $text-color;
   border-radius: 2px;
   
@@ -273,7 +273,7 @@ a > code {
   margin-right: 0.1em;
   font-family: $monospace;
   font-weight: 400;
-  background-color: $code-background-color-dark;
+  background-color: $code-background-color;
   border-radius: 2px;
   
   &:before,
