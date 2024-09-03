@@ -73,11 +73,11 @@ ins {
   }
 }
 
-/* devinlife comment: 구글 애드 센스의 아래 바 레이아웃 삭제
- https://github.com/mmistakes/minimal-mistakes/issues/306 */
+/* 구글 광고 */
  ins.adsbygoogle {
   border-bottom: none !important;
   margin-bottom: 1em;
+  height: auto !important;
 }
 
 del a {

@@ -285,5 +285,6 @@ defaults:
       comments: true
       # share: true
       related: true
+      toc_ads: true
       sidebar:
         nav: "categories"
