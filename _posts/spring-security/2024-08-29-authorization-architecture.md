@@ -33,7 +33,7 @@ last_modified_at: 2024-08-29
 접두사는 `GrantedAuthorityDefaults`를 사용해 커스텀 할 수 있다. 이부분은 [공식문서](https://docs.spring.io/spring-security/reference/servlet/authorization/architecture.html#authz-authorities)를 확인하자. 
 
 # 👮 AuthorizationManager
-`AuthorizationManager` 인터페이스는 스프링 시큐리티의 요청 기반, 메소드 기반, 메시지 기반의 인가 구성 요소에서 호출되며, 접근 제어 결정을 내리는 최종 책임자이다. [이전에 사용되던 `AccessDecisionManager`와 `AccessDecisionVoter`를 대체한다.](#-accessdecisionmanager와-accessdecisionvoter)
+`AuthorizationManager` 인터페이스는 스프링 시큐리티의 요청 기반, 메소드 기반, 메시지 기반의 인가 구성 요소에서 호출되며, **접근 제어 결정을 내리는 최종 책임자**이다. [이전에 사용되던 `AccessDecisionManager`와 `AccessDecisionVoter`를 대체한다.](#-accessdecisionmanager와-accessdecisionvoter)
 
 <b>주요 메서드:</b>
 - `check`: 접근 허용 여부를 결정한다
