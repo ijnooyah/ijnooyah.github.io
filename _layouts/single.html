@@ -50,7 +50,8 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-
+      
+      {% if page.toc_ads %}
       <!-- 광고 -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3567441797764310" crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
@@ -62,6 +63,7 @@ layout: default
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      {% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}

@@ -3,6 +3,7 @@ title: "Hi all! I'm Yoonji👋🏻"
 permalink: /about/
 layout: single
 comments: false
+toc_ads: false
 ---
 
 <div>
