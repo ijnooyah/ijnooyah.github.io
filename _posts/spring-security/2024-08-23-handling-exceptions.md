@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-23
-last_modified_at: 2024-08-29
+last_modified_at: 2024-09-04
 ---
 
 {% include spring-security-list.md %}
@@ -43,6 +43,10 @@ last_modified_at: 2024-08-29
 
 만약 클라이언트가 인증 정보 없이 보호된 리소스에 접근을 시도하는 경우 `AuthenticationEntryPoint`가 개입한다.  
 `AuthenticationEntryPoint`의 구현체는 로그인 페이지로 리다이렉트를 수행하거나, `WWW-Authenticate` 헤더를 포함한 응답을 보내거나, 그 외 다른 조치를 취할 수 있다.
+
+> <b>AuthenticationEntryPoint VS AccessDeniedHandler</b>
+- `AuthenticationEntryPoint`: 인증되지 않은 상태 
+- `AccessDeniedHandler`: 인증된 상태
 
 ---
 
