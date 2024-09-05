@@ -105,7 +105,7 @@ analytics:
 author:
   name: "윤지" # 블로그 닉네임
   avatar: "/assets/images/profile.png" # 블로그 프로필 사진
-  #   bio              : "hi all!"
+  bio              : "꾸준히 채워나가는 나만의 도서관"
   # location         : "Seoul, Korea"
   # email            : "youremailhere@xxxxxx.com"
 
@@ -213,7 +213,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
