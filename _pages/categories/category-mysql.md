@@ -1,9 +1,9 @@
 ---
-title: "Spring"
+title: "MySQL"
 layout: category
-permalink: /categories/spring/
+permalink: /categories/mysql/
 author_profile: true
-taxonomy: Spring
+taxonomy: MySQL
 sidebar:
   nav: "categories"
 ---

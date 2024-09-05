@@ -18,30 +18,84 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Algorithm"
-    url: /categories/algorithm/
-  - title: "Architecture"
-    url: /categories/architecture/
-  - title: "Computer"
-    url: /categories/computer/
-  - title: "Database"
-    url: /categories/database/
-  - title: "Design Pattern"
-    url: /categories/design-pattern/
-  - title: "Docker"
-    url: /categories/docker/
-  - title: "Git/Github"
-    url: /categories/git-github/
-  - title: "Java"
-    url: /categories/java/
-  - title: "Network"
-    url: /categories/network/
-  - title: "Redis"
-    url: /categories/redis/
-  - title: "Server"
-    url: /categories/server/
+  - title: "Computer Science"
+    children:
+      - title: "Computer Architecture"
+        url: /categories/computer-architecture/
+      - title: "Database"
+        url: /categories/database/
+      - title: "Network"
+        url: /categories/network/
+      - title: "Server"
+        url: /categories/server/
+        
+  - title: "Programming"
+    children:
+      - title: "Java"
+        url: /categories/java/
+
+  - title: "Software Design"
+    children:
+      - title: "Architecture"
+        url: /categories/architecture/
+      - title: "Design Pattern"
+        url: /categories/design-pattern/
+
   - title: "Spring"
-    url: /categories/spring/
-  - title: "Spring Security"
-    url: /categories/spring-security/
+    children:
+      - title: "Spring Data JPA"
+        url: /categories/spring-data-jpa/
+      - title: "Spring Framework"
+        url: /categories/spring-framework/
+      - title: "Spring Security"
+        url: /categories/spring-security/
+
+  - title: "Database"
+    children:
+      - title: "MySQL"
+        url: /categories/mysql/
+      - title: "Redis"
+        url: /categories/redis/
+      - title: "Querydsl"
+        url: /categories/querydsl/
+
+  - title: "DevOps"
+    children:
+      - title: "Docker"
+        url: /categories/docker/
+      - title: "GitHub Actions"
+        url: /categories/github-actions/
+  
+  - title: "Development Tools"
+    children:
+      - title: "Git/Github"
+        url: /categories/git-github/
+      - title: "IntelliJ"
+        url: /categories/intellij/
+
+  - title: "Cloud Platforms"
+    children:
+      - title: "AWS"
+        url: /categories/aws/
+
+  - title: "Coding Interview"
+    children:
+      - title: "Algorithm"
+        url: /categories/algorithm/
+      - title: "Data Structure"
+        url: /categories/data-structure/
+
+  - title: "Project"
+    children:
+      - title: "Yeogiya"
+        url: /categories/yeogiya/
+  
+
+ 
+  
+
+ 
+
+
+ 
 

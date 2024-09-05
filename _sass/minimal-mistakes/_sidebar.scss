@@ -6,6 +6,19 @@
    Default
    ========================================================================== */
 
+
+/* 사이드바 스크롤 */
+.sidebar {
+  -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
+  scrollbar-width: none !important; /* for Firefox */
+  overflow-y: scroll !important; 
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none !important; /* for Chrome, Safari, and Opera */
+}
+
+
 .sidebar {
   @include clearfix();
 

@@ -1,9 +1,9 @@
 ---
-title: "Computer"
+title: "Yeogiya"
 layout: category
-permalink: /categories/computer/
+permalink: /categories/yeogiya/
 author_profile: true
-taxonomy: Computer
+taxonomy: Yeogiya
 sidebar:
   nav: "categories"
 ---
