@@ -68,7 +68,7 @@ categories:
   
   - title: "Development Tools"
     children:
-      - title: "Git/Github"
+      - title: "Git/GitHub"
         url: /categories/git-github/
       - title: "IntelliJ"
         url: /categories/intellij/
