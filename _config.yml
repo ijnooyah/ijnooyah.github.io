@@ -23,7 +23,7 @@ title: "Yoonji Blog" # 상단 헤더에 보이는 블로그 명
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
 name: "Yoonji" # 블로그 닉네임 설정
-description: "천천히 그리고 꾸준히 채워 나가는 곳" # 블로그 설명
+description: "꾸준히 채워나가는 나만의 도서관" # 블로그 설명
 url: "https://ijnooyah.github.io" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "ijnooyah/ijnooyah.github.io" # GitHub Repo 이름
@@ -213,7 +213,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 6 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
