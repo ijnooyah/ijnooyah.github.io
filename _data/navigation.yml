@@ -78,12 +78,12 @@ categories:
       - title: "AWS"
         url: /categories/aws/
 
-  - title: "Coding Interview"
-    children:
-      - title: "Algorithm"
-        url: /categories/algorithm/
-      - title: "Data Structure"
-        url: /categories/data-structure/
+  # - title: "Coding Interview"
+  #   children:
+  #     - title: "Algorithm"
+  #       url: /categories/algorithm/
+  #     - title: "Data Structure"
+  #       url: /categories/data-structure/
 
   - title: "Project"
     children:
