@@ -2,6 +2,36 @@
    ARCHIVE
    ========================================================================== */
 
+/* 태그 목록 */
+.page__taxonomy-item-tag {
+    display: inside;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    color: $text-color;
+    font-family: $menufont;
+    font-size: .7em;
+    text-decoration: none;
+    border: 1px solid mix($text-color, $background-color, 30%);
+    border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color !important;
+  }
+  &:visited {
+    color: inherit;
+  }
+}
+
+.layout--tags .taxonomy__section .archive__item-title {
+  margin-top: 1.3em !important; // 태그 목록 간격 좁은거 해결
+}
+.layout--categories .taxonomy__section .archive__item-title {
+  margin-top: 1.3em !important; // 카테고리 목록 간격 좁은거 해결
+}
+
+
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
@@ -84,6 +114,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
+  margin-bottom: .1em;
   font-size: 0.85em;
   font-weight: 400;
 
@@ -140,7 +171,7 @@
 .list__item {
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
 

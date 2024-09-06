@@ -23,6 +23,10 @@
   &:hover {
     color: mix(#000, $primary-color, 25%);
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .search-icon {
