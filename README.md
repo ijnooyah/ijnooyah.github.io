@@ -3,14 +3,22 @@
 [`https://ijnooyah.github.io/`](https://ijnooyah.github.io/)
 
 > 🎀 **목차**
-
-┌ `Architecture`  
-├ `Database`  
-├ `Desighn Pattern`  
-├ `Docker`  
-├ `Java`  
+┌ `Database`  
 ├ `Network`  
-├ `Redis`  
 ├ `Server`  
-├ `Spring`  
-└ `Spring Security`  
+├ `Java`  
+├ `Database`  
+├ `Architecture`  
+├ `Design Pattern`  
+├ `Spring Data JPA`  
+├ `Spring Framework`  
+├ `Spring Security`  
+├ `MySQL`  
+├ `Redis`  
+├ `Querydsl`  
+├ `Docker`  
+├ `GitHub Actions`  
+├ `Git/GitHub`  
+├ `IntelliJ`  
+├ `AWS`  
+└ `Yeogiya`  
