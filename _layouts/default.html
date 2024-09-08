@@ -80,6 +80,22 @@
       </div>
     {% endif %}
 
+    <!-- 위, 아래 버튼 추가-->
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fas fa-angle-double-up fa-2x"></i> </a>
+    </aside>
+
+    <aside class="sidebar__bottom">
+      <a href="#footer"> <i class="fa fa-angle-double-down fa-2x"></i> </a>
+    </aside>
+
+     <!-- 라이트모드 토글 추가 -->
+     <aside class= "dark__toggle">
+      {% if site.minimal_mistakes_skin2 %}
+        <i class="fas fa-adjust" aria-hidden="true" onclick="toggleTheme()" style="cursor:pointer"></i>
+      {% endif %}
+    </aside>
+
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}

@@ -7,10 +7,18 @@
     <div class="author__avatar">
       {% if author.home %}
         <a href="{{ author.home | relative_url }}">
-          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
+          <img src="{{ author.avatar | relative_url }}" 
+                alt="{{ author.name }}" 
+                itemprop="image"
+                data-light-src="{{ author.avatar | relative_url }}"
+                {% if author.avatar_dark %}data-dark-src="{{ author.avatar_dark | relative_url }}"{% endif %}>
         </a>
       {% else %}
-        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
+          <img src="{{ author.avatar | relative_url }}" 
+                alt="{{ author.name }}" 
+                itemprop="image"
+                data-light-src="{{ author.avatar | relative_url }}"
+                {% if author.avatar_dark %}data-dark-src="{{ author.avatar_dark | relative_url }}"{% endif %}>
       {% endif %}
     </div>
   {% endif %}

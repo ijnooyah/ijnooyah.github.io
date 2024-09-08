@@ -442,6 +442,7 @@
   margin: 0 0 2em 0;
   font-family: $menufont;
   font-size: 1.5rem;
+  color: $text-color;
 
   a {
     color: inherit;
@@ -536,7 +537,7 @@
 
   .nav__title {
     /* change Right Navigation title 'On this page' color */
-    color: rgb(54, 54, 54);
+    color: mix($text-color, $background-color, 85%);
     font-size: $type-size-6;
     background: inherit;
     border-top-left-radius: $border-radius;

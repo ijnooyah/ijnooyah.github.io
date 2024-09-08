@@ -6,6 +6,32 @@
    Default
    ========================================================================== */
 
+.sidebar__top {
+  position: fixed;
+  bottom: 3.7em;
+  right: 1.2em;
+  z-index: 10;
+  font-size: .8em;
+}
+  
+.sidebar__bottom {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.2em;
+  z-index: 10;
+  font-size: .8em;
+}
+  
+.dark__toggle {
+  position: fixed;
+  bottom: 1.6em;
+  right: 1.9em;
+  z-index: 10;
+  font-size: 1.3em;
+  display: inline-block;
+  color: $primary-color; //inline-block으로 설정 시 컬러 변경도 가능하다
+}
+
 .sidebar {
   @include clearfix();
 

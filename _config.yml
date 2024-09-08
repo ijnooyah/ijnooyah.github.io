@@ -16,6 +16,7 @@
 # plum skin 활용하여 색상 설정함. 변경하려면 _sass/minimal-mistakes/skins/_plum.scss 에서 변경하거나
 # 해당 디렉토리 내의 다른 테마로 변경 가능 (minimal-mistakes 기본 제공 테마)
 minimal_mistakes_skin: "plum" # "default" "air", "aqua", ...
+minimal_mistakes_skin2: "dark"
 
 # Site Settings
 locale: "ko-KR" #"en-US"
@@ -105,6 +106,7 @@ analytics:
 author:
   name: "윤지" # 블로그 닉네임
   avatar: "/assets/images/profile.png" # 블로그 프로필 사진
+  avatar_dark: "/assets/images/profile_dark.png"
   #   bio              : "hi all!"
   # location         : "Seoul, Korea"
   # email            : "youremailhere@xxxxxx.com"
