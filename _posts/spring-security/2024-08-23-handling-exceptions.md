@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Spring Security
 tags:
-  - [Spring Security]
+  - [Spring Security, 스프링 시큐리티 시리즈]
 
 permalink: /spring-security/handling-exceptions/
 
