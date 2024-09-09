@@ -298,8 +298,15 @@ hr {
   display: block;
   margin: 3em 0em 3em 0em;
   border: 0;
-  border-top: 1px solid mix($text-color, $background-color, 20%);
+  border-top: 1px dashed mix($text-color, $background-color, 20%);
+  opacity: .5;
+}
 
+hr.style1 {
+  display: block;
+  margin: 3em 0em 3em 0em;
+  border: 0;
+  border-top: 1px solid mix($text-color, $background-color, 30%);
 }
 
 /* lists */
