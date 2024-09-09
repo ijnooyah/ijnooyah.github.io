@@ -146,6 +146,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
+  position: relative;
 
   @include breakpoint($large) {
     display: block;
@@ -165,6 +166,24 @@
       border: 0px solid $border-color;
     }
   }
+}
+
+.author__avatar-image,
+.author__avatar-image--dark {
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.author__avatar-image--dark {
+  display: none;
+}
+
+[data-theme="dark"] .author__avatar-image {
+  display: none;
+}
+
+[data-theme="dark"] .author__avatar-image--dark {
+  display: block;
 }
 
 
