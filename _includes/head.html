@@ -16,13 +16,18 @@
 <!-- For all browsers -->
 <!-- <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"> -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" id="theme_source">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" id="theme_source">
 {% if site.minimal_mistakes_skin2 %}
   <link rel="stylesheet alternate" href="{{ '/assets/css/main2.css' | relative_url }}" id="theme_source_2">
+  <link rel="preload" as="image" href="{{ site.author.avatar | relative_url }}">
+  {% if site.author.avatar_dark %}
+    <link rel="preload" as="image" href="{{ site.author.avatar_dark | relative_url }}">
+  {% endif %}
   <script>
     let theme = sessionStorage.getItem('theme');
     if(theme === "dark")
     {
-      sessionStorage.setItem('theme', 'dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
       node1 = document.getElementById('theme_source');
       node2 = document.getElementById('theme_source_2');
       node1.setAttribute('rel', 'stylesheet alternate'); 
@@ -30,25 +35,9 @@
     }
     else
     {
-      sessionStorage.setItem('theme', 'light');
+      document.documentElement.setAttribute('data-theme', 'light');
     }
 
-    // 아바타 업데이트 함수
-    function updateAvatar() {
-      var avatarImg = document.querySelector('.author__avatar img');
-      if (!avatarImg) return;
-
-      var isDarkMode = sessionStorage.getItem('theme') === 'dark';
-      var darkAvatarSrc = avatarImg.getAttribute('data-dark-src');
-      var lightAvatarSrc = avatarImg.getAttribute('data-light-src');
-
-      avatarImg.src = isDarkMode && darkAvatarSrc ? darkAvatarSrc : lightAvatarSrc;
-    }
-
-    // 페이지 로드 시 아바타 업데이트
-    document.addEventListener('DOMContentLoaded', updateAvatar);
-
-    // 테마 토글 함수 수정
     function toggleTheme() {
       var node1 = document.getElementById('theme_source');
       var node2 = document.getElementById('theme_source_2');
@@ -56,12 +45,13 @@
         node1.setAttribute('rel', 'stylesheet alternate');
         node2.setAttribute('rel', 'stylesheet');
         sessionStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
       } else {
         node2.setAttribute('rel', 'stylesheet alternate');
         node1.setAttribute('rel', 'stylesheet');
         sessionStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
       }
-      updateAvatar();
     }
   </script>
 {% endif %}
