@@ -37,7 +37,7 @@ figure.highlight {
       padding-right: 1em;
       width: 1em;
       color: $base05;
-      border-right: 1px solid $base05;
+      border-right: 1px solid mix($base05, $background-color, 50%);
       text-align: right;
     }
 
