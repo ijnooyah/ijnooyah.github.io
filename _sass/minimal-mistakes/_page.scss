@@ -133,7 +133,7 @@
     /* 이미지&캡션 */
     p:has(img) {
       text-align: center;
-      color: $dark-gray;
+      color: mix($text-color, $background-color, 40%);
       margin: 0 auto;
       font-size: .8em;
     }
