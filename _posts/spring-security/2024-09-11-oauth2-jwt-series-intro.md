@@ -1,5 +1,5 @@
 ---
-title: "[Spring Security] Spring Security OAuth2 & JWT 실습 튜토리얼"
+title: "[Spring Security] Spring Security 6.x 버전 OAuth2 & JWT 실습 튜토리얼"
 excerpt: ""
 
 categories:
@@ -333,7 +333,7 @@ public enum ProviderType {
 **RoleType.java**
 ```java
 public enum RoleType {
-    ROLE_USER, ROLE_ADMIN
+    ROLE_USER, ROLE_GUEST
 }
 ```
 <br>
