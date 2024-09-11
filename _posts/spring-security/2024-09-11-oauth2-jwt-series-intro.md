@@ -175,13 +175,9 @@ class MemberTest {
 
 # 📝 엔티티 작성하기
 
-![엔티티 관계도](/assets/images/posts_img/spring-security/oauth2-jwt-series-intro/security_entity.png)
-
 JPA를 공부하는 것이 아니므로 최대한 간단한 도메인 모델을 설계했다.
 
-- 회원과 리프레시토큰: 일대일 관계
-- 회원과 권한: 다대다 관계
-  - 다대다 관계를 일대다 관계로 풀어냈다.
+- 회원(Member)과 리프레시토큰(RefreshToken): 일대일 관계
 
 이제 각 엔티티에 대한 코드를 작성해보자.
 
@@ -219,55 +215,38 @@ public class Member extends BaseTimeEntity {
 
     private String password;
 
-    private String username;
+    private String name;
 
     private String email;
 
     @Enumerated(EnumType.STRING)
-    private ProviderType provider;
+    private ProviderType provider; // 외부 인증 제공자의 이름
 
-    private String providerId;
+    private String providerId; // 외부 인증 제공자에게 부여받은 고유 식별자
 
-    @OneToMany(mappedBy = "member")
-    private List<MemberRole> memberRoles = new ArrayList<>();
+    @Enumerated(EnumType.STRING)
+    private RoleType role;
 
     @OneToOne(mappedBy = "member", fetch = FetchType.LAZY)
     private RefreshToken refreshToken;
 
-    public void addMemberRole(MemberRole memberRole) {
-        memberRoles.add(memberRole);
-        memberRole.changeMember(this);
+    @Builder
+    public Member(String name, String email, ProviderType provider, String providerId, RoleType role) {
+        this.name = name;
+        this.email = email;
+        this.provider = provider;
+        this.providerId = providerId;
+        this.role = role;
+    }
+
+    public Member update(String name) {
+        this.name = name;
+        return this;
     }
 
     public void changeRefreshToken(RefreshToken refreshToken) {
         this.refreshToken = refreshToken;
         refreshToken.changeMember(this);
-    }
-}
-```
-<br>
-
-**MemberRole.java**
-```java
-@Entity
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class MemberRole extends BaseTimeEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "member_role_id")
-    private Long id;
-
-    @ManyToOne(fetch =  FetchType.LAZY)
-    @JoinColumn(name = "member_id")
-    private Member member;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "role_id")
-    private Role role;
-
-    public void changeMember(Member member) {
-        this.member = member;
     }
 }
 ```
@@ -297,27 +276,6 @@ public class RefreshToken extends BaseTimeEntity {
     public void changeMember(Member member) {
         this.member = member;
     }
-}
-```
-
-<br>
-
-**Role.java**
-```java
-@Entity
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Role extends BaseTimeEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "role_id")
-    private Long id;
-
-    @Enumerated(EnumType.STRING)
-    private RoleType name;
-
-    @OneToMany(mappedBy = "role")
-    private List<MemberRole> memberRoles = new ArrayList<>();
 }
 ```
 <br>
