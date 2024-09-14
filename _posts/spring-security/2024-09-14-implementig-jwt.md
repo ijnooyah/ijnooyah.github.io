@@ -298,7 +298,7 @@ public class SecurityConfig {
 회원가입은 JWT를 사용하는 코드가 없으므로 생략하겠다. 깃허브에서 보기를 바란다.
 로그인을 구현해보자. 참고로 로그인할때마다 기존 리프레시 토큰을 폐기하고 새로운 리프레시토큰을 발급한다.
 
-AuthController
+`AuthController`
 ```java
 @PostMapping("/login")
     public ResponseEntity<TokenResponse> login(@RequestBody LoginRequest request) {
