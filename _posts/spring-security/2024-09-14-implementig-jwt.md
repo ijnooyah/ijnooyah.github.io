@@ -16,6 +16,11 @@ date: 2024-09-14
 last_modified_at: 2024-09-14
 ---
 
+{% include jwt-list.md %}
+
+---
+{: .style1}
+
 이번 실습에서는 다음과 같은 기능들을 구현해본다.
 - 로그인
 - 사용자 정보 조회
@@ -23,6 +28,9 @@ last_modified_at: 2024-09-14
 - 로그아웃
   
 해당 프로젝트의 전체 코드는 [깃허브](https://github.com/ijnooyah/jwt-spring-security)에서 볼 수 있다.
+
+---
+{: .style1}
 
 # 🔐 JWT 구현하기
 

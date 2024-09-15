@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Spring Security
 tags:
-  - [Spring Security]
+  - [Spring Security, JWT, 실습, JWT 시리즈]
 
 permalink: /spring-security/jwt-series-intro
 
@@ -15,6 +15,11 @@ toc_sticky: true
 date: 2024-09-13
 last_modified_at: 2024-09-14
 ---
+
+{% include jwt-list.md %}
+
+---
+{: .style1}
 
 [Spring Security](https://ijnooyah.github.io/spring-security/basic/), [JWT](https://ijnooyah.github.io/spring-security/jwt) 포스팅을 통해 개념에 대해 학습하였다. 이제 배운 내용을 바탕으로 직접 구현해보는 과정을 시작해보겠다. 
 이제 이것들을 직접 구현해보는 과정을 시작해보자. 
