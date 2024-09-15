@@ -19,13 +19,12 @@ last_modified_at: 2024-09-14
 {% include jwt-list.md %}
 
 ---
-{: .style1}
 
 [Spring Security](https://ijnooyah.github.io/spring-security/basic/), [JWT](https://ijnooyah.github.io/spring-security/jwt) 포스팅을 통해 개념에 대해 학습하였다. 이제 배운 내용을 바탕으로 직접 구현해보는 과정을 시작해보겠다. 
 이제 이것들을 직접 구현해보는 과정을 시작해보자. 
 
 ---
-{: .style1}
+
 
 # 🚀 프로젝트 생성하기
 
@@ -60,7 +59,6 @@ last_modified_at: 2024-09-14
 사진과 같은 화면이 뜨면 잘 동작하고 있는 거다.
 
 ---
-{: .style1}
 
 # 🗃️ 데이터베이스 설정하기 (H2)
 
@@ -173,7 +171,6 @@ class UserTest {
 이제 이 프로젝트에서 사용할 도메인 모델을 알아보자.
 
 ---
-{: .style1}
 
 # 📝 엔티티 작성하기
 
@@ -304,8 +301,6 @@ public class RefreshToken extends BaseTimeEntity {
 
 
 ---
-{: .style1}
-
 
 이것으로 기본적인 프로젝트 설정이 완료 되었다. [다음 포스팅](https://ijnooyah.github.io/spring-security/implementig-jwt)에서 JWT를 이용해 로그인, 로그아웃, 사용자 정보 조회, 토큰 재발급 기능을 구현해보자.
 
