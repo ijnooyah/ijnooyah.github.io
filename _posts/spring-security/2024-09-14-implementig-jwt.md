@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Spring Security
 tags:
-  - [Spring Security]
+  - [Spring Security, JWT, 실습, JWT 시리즈]
 
 permalink: /spring-security/implementig-jwt
 
