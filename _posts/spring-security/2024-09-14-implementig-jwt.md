@@ -303,6 +303,8 @@ public class SecurityConfig {
 ---
 {: .style1}
 
+# 🔑 로그인 기능 구현하기
+
 회원가입은 JWT를 사용하는 코드가 없으므로 생략하겠다. 깃허브에서 보기를 바란다.
 로그인을 구현해보자. 참고로 로그인할때마다 기존 리프레시 토큰을 폐기하고 새로운 리프레시토큰을 발급한다.
 
@@ -391,7 +393,7 @@ private LocalDateTime getExpireDate() {
 ---
 {: .style1}
 
-# 🔑 로그인 기능 구현하기
+# 📝 내 정보 조회 기능 구현하기
 
 다음으로는 회원이 자신의 정보를 조회하는 기능을 만들어보자.
 이 기능을 구현하기 전에 `JwtAuthenticationFilter`를 만들자. JWT 토큰의 유효성을 검증하고 유효하면 해당 사용자의 인증 정보를
@@ -479,6 +481,64 @@ private final JwtAuthenticationFilter jwtAuthenticationFilter;
         .anyRequest().authenticated())
 ```
 
+이제 내 정보를 조회하는 API를 만들어 보자
+`UserController`
+```java
+@RestController
+@RequestMapping("/api/v1/user")
+@RequiredArgsConstructor
+public class UserController {
+
+    private final UserService userService;
+
+    @GetMapping("")
+    public ResponseEntity<UserResponse> getUser(@AuthenticationPrincipal UserAdapter adapter) {
+        UserResponse userResponse = userService.getUser(adapter);
+        return ResponseEntity.ok(userResponse);
+    }
+
+}
+```
+
+`@AuthenticationPrincipal`은 현재 인증된 사용자의 정보를 컨트롤러 메서드의 파라미터로 쉽게 주입받을 수 있게 해주는 어노테이션이다. 
+이 어노테이션을 사용하면 SecurityContext를 직접 다루지 않아도 된다. 우리는 `JwtAuthenticationFilter`에서 `SecurityContextHoler`의 `Authenticaton` 객체에 `UserDetails` 타입의 `UserAdapter`를 저장했다. (`CustomUserDetailsService` 코드 참고) 
+
+`UserService`
+```java
+@Service
+@RequiredArgsConstructor
+public class UserService {
+
+    @Transactional(readOnly = true)
+    public UserResponse getUser(UserAdapter adapter) {
+        return UserResponse.builder()
+                .name(adapter.getName())
+                .email(adapter.getEmail())
+                .role(adapter.getRole())
+                .build();
+    }
+
+}
+```
+
+`UserResponse`
+```java
+@Getter
+@Setter
+@NoArgsConstructor
+public class UserResponse {
+    private String email;
+    private String name;
+    private String role;
+
+    @Builder
+    public UserResponse(String email, String name, String role) {
+        this.email = email;
+        this.name = name;
+        this.role = role;
+    }
+}
+```
 ---
 {: .style1}
 
@@ -488,7 +548,7 @@ private final JwtAuthenticationFilter jwtAuthenticationFilter;
 리프레시 토큰을 사용해  액세스 토큰, 리프레시 토큰을 재발급해준다.
 
 `TokenController`를 만들어준다.
-참고로 해당 api 테스트할때 header에 엑세스 토큰을 넣은 상태로 즉, 로그인한 상태로 바디에 리프레시 토큰값을 넣어야한다.
+참고로 해당 API 테스트할때 header에 엑세스 토큰을 넣은 상태로 즉, 로그인한 상태로 바디에 리프레시 토큰값을 넣어야한다.
 
 ```java
 @RestController
@@ -586,7 +646,7 @@ public void revoke() {
 }
 ```
 
-이렇게 하면 `JwtAuthenticationFilter`에서 `tokenService.isRevokedRefreshToken(username)` 부분에서 걸리게 된다.
+이렇게 하면 revoked가 true인 즉 무효화된 토큰은 `JwtAuthenticationFilter`에서 `tokenService.isRevokedRefreshToken(username)` 부분에서 걸리게 된다.
 
 ---
 {: .style1}
