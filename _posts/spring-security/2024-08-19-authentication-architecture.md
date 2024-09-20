@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-19
-last_modified_at: 2024-08-29
+last_modified_at: 2024-09-20
 ---
 
 {% include spring-security-list.md %}
@@ -76,7 +76,7 @@ Collection<? extends GrantedAuthority> authorities = authentication.getAuthoriti
 ---
 
 # 👒 AuthenticationManager
-`AuthenticationManager` 는 필터가 전달한 인증 정보를 바탕으로 인증을 수행하고, 인증 결과를 반환한다. `AuthenticationManager` 의 호출 후, 반환된 [`Authentication`](#-authentication) 객체가 [`SecurityContextHolder`](#-securitycontextholder) 에 설정된다.  
+`AuthenticationManager` 는 필터가 전달한 인증 정보를 바탕으로 인증을 수행하고, 인증 결과를 반환한다. <mark>`AuthenticationManager` 의 호출 후, 반환된 [`Authentication`](#-authentication) 객체가 [`SecurityContextHolder`](#-securitycontextholder) 에 설정된다.</mark>  
 주로 사용하는 구현체는 [`ProviderManager`](#-providermanager) 다. 
 
 <!-- "이후"는 다음과 같은 순서를 나타냅니다:
