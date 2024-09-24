@@ -38,7 +38,20 @@ masthead_title: # overrides the website title displayed in the masthead, use " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
-  provider: "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider: "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  giscus:
+    data-repo: "ijnooyah/ijnooyah.github.io"
+    data-repo-id: "R_kgDOMhLJ9Q"
+    data-category: "Blog comment"
+    data-category-id: "DIC_kwDOMhLJ9c4CiupE"
+    data-mapping: "pathname"
+    data-strict: "0"
+    data-reactions-enabled: "1"
+    data-emit-metadata: "0"
+    data-input-position: "bottom"
+    data-theme: "light"
+    data-lang: "ko"
+    crossorigin: "anonymous"
   disqus:
     shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:

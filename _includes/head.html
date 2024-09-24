@@ -46,13 +46,31 @@
         node2.setAttribute('rel', 'stylesheet');
         sessionStorage.setItem('theme', 'dark');
         document.documentElement.setAttribute('data-theme', 'dark');
+        changeGiscusTheme('dark_dimmed');
       } else {
         node2.setAttribute('rel', 'stylesheet alternate');
         node1.setAttribute('rel', 'stylesheet');
         sessionStorage.setItem('theme', 'light');
         document.documentElement.setAttribute('data-theme', 'light');
+        changeGiscusTheme('light');
       }
+
     }
+
+    function changeGiscusTheme(giscusTheme) {
+      console.log('giscusTheme', giscusTheme)
+      function sendMessage(message) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: giscusTheme,
+        },
+      });
+    }
+
   </script>
 {% endif %}
 
