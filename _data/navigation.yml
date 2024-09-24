@@ -89,6 +89,11 @@ categories:
     children:
       - title: "Yeogiya"
         url: /categories/yeogiya/
+
+  - title: "Etc"
+    children:
+      - title: "Blog"
+        url: /categories/blog/
   
 
  
