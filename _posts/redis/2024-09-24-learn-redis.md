@@ -1,6 +1,6 @@
 ---
 title: "[Redis] Spring Boot 프로젝트에 Redis 적용하기"
-excerpt: "설명"
+excerpt: ""
 
 categories:
   - Redis
