@@ -32,7 +32,7 @@ last_modified_at: 2024-09-19
 
 # 🧱 Dockerfile 주요 명령어
 
-#### FROM
+#### 🏁 FROM
 - 베이스 이미지를 지정하는 명령어
 - Dockerfile에서 반드시 있어야 하며, 보통 가장 첫 줄에 위치한다.
     ```dockerfile
@@ -43,7 +43,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### LABEL
+#### 🏷️ LABEL
 * 이미지에 메타데이터를 추가하는 기능
 * 키-값 쌍으로 정보를 저장하며, 보통 저자, 버전, 작성일자 등을 넣는다.
     ```dockerfile
@@ -54,7 +54,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### CMD
+#### 🎮 CMD
 * 컨테이너가 시작될 때 가장 먼저 실행할 기본 명령을 지정
 * Dockerfile 내에서 한 번만 사용 가능하며, 여러 개 있을 경우 마지막 것만 적용된다.
     ```dockerfile
@@ -67,7 +67,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### RUN
+#### 🏃 RUN
 * 이미지 빌드 과정에서 실행할 명령을 지정
 * 새로운 레이어를 생성하여 패키지(프로그램) 설치 등의 작업을 수행한다. (이미지 레이어를 쌓아나가는 과정)
     ```dockerfile
@@ -79,7 +79,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### ENTRYPOINT
+#### 🚪 ENTRYPOINT
 * 컨테이너가 시작될 때 실행할 명령을 지정
 * **CMD와 달리** docker run 명령의 인자로 **덮어쓰기가 되지 않는다.**
     ```dockerfile
@@ -88,7 +88,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### EXPOSE
+#### 📡 EXPOSE
 * 컨테이너의 특정 포트를 외부에 오픈하는 설정
     ```dockerfile
     EXPOSE 8080
@@ -100,7 +100,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### ENV
+#### 🌍 ENV
 * 컨테이너 내의 환경 변수를 설정
 * 설정한 환경 변수는 `RUN`, `CMD`, `ENTRYPOINT` 명령에도 적용된다.
     ```dockerfile
@@ -112,7 +112,7 @@ last_modified_at: 2024-09-19
 ---
 {: .style1}
 
-#### WORKDIR
+#### 📂 WORKDIR
 * 이후 명령어들이 실행될 작업 디렉토리를 설정
     ```dockerfile
     # /app 작업 디렉토리로 설정
