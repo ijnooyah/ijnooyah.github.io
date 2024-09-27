@@ -43,6 +43,8 @@ categories:
 
   - title: "Spring"
     children:
+      - title: "Spring Boot"
+        url: /categories/spring-boot/
       - title: "Spring Data JPA"
         url: /categories/spring-data-jpa/
       - title: "Spring Framework"
@@ -65,6 +67,8 @@ categories:
         url: /categories/docker/
       - title: "GitHub Actions"
         url: /categories/github-actions/
+      - title: "Gradle"
+        url: /categories/gradle/
   
   - title: "Development Tools"
     children:
