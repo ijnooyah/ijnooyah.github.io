@@ -26,6 +26,8 @@ categories:
         url: /categories/database/
       - title: "Network"
         url: /categories/network/
+      - title: "Operating Systems"
+        url: /categories/operating-systems/
       - title: "Server"
         url: /categories/server/
         
