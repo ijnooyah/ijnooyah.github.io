@@ -27,7 +27,7 @@ public CommonResponse<AdminUserListResponse> searchUsersWithCursor(@RequestBody 
 }
 ```
 
-`/search` API가 많은 파라미터를 받아야 해서, `@RequestParameter`로 각각 바인딩하는 대신
+`/search` API가 많은 파라미터를 받아야 해서, `@RequestParam`으로 각각 바인딩하는 대신
 `AdminUserSearchCondition`이라는 DTO를 만들어 사용했다. 그러나 스웨거를 통해 테스트를 해보니 파라미터 바인딩이 되지 않았다. 
 
 ```
@@ -88,7 +88,7 @@ public CommonResponse<AdminUserListResponse> searchUsersWithCursor(@ParameterObj
 ```
 
 완성된 코드에서 `@ParameterObject`는 뭘까? 이건 스웨거 관련된 코드인데 
-`@RequestParameter`를 사용해서 파라미터를 하나하나 받게되면 스웨거 문서에 필드 하나하나 받을 수 있게 나온다.  
+`@RequestParam`을 사용해서 파라미터를 하나하나 받게되면 스웨거 문서에 필드 하나하나 받을 수 있게 나온다.  
 그런데 `AdminUserSearchCondition`만 달랑 놓으니 JSON 형태로 입력받을 수 있게 나오는데 이게 되게 보기에도 안좋았고 입력하기도 불편했다. 다른 사람의 이미지를 가져와서 어떻게 보여지는 보여주면  
 
 ![alt text](/assets/images/posts_img/spring-framework/get-mapping/json.png)
