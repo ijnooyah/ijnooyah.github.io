@@ -130,6 +130,7 @@ Response Body에서 날짜를 원하는 형식으로 반환하려면 `@JsonForma
 - Response Body: `@JsonFormat` 사용
 
 ---
+
 <p class='ref'>참고</p>
 - [https://github.com/sungwoon129/SpringBoot-LocalDateTime](https://github.com/sungwoon129/SpringBoot-LocalDateTime){: target='_blank'}
 
