@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Spring Framework
 tags:
-  - [Spring Framework]
+  - [Spring Framework, 트러블 슈팅]
 
 permalink: /spring-framework/get-mapping
 
