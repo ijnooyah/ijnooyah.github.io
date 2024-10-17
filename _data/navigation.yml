@@ -51,8 +51,8 @@ categories:
         url: /categories/spring-data-jpa/
       - title: "Spring Framework"
         url: /categories/spring-framework/
-      - title: "Spring Security"
-        url: /categories/spring-security/
+      - title: "Swagger"
+        url: /categories/swagger/
 
   - title: "Database"
     children:

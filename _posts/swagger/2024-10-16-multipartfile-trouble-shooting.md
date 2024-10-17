@@ -74,7 +74,7 @@ Content-Type 'application/octet-stream' is not supported
 `multipart/form-data` 요청에서 각 파트의 기본 Content-Type은 `application/octet-stream`이다.  
 스웨거는 이 기본값을 사용해 요청을 보내지만 서버 측에선 이걸 처리할 준비가 되지 않은 것이다.
 
-## 🎉 해결
+## 🎉 해결 방법
 `application/octet-stream` Content-Typea을 처리할 수 있는 커스텀 `HttpMessageConverter`를 구현해 해결했다.  
 
 ```java
