@@ -7,6 +7,7 @@
 ┌ Computer Science
 │   ├ Database
 │   ├ Network
+│   ├ Operating Systems
 │   └ Server
 ├ Programming
 │   └ Java
@@ -16,19 +17,23 @@
 ├ Spring
 │   ├ Spring Data JPA
 │   ├ Spring Framework
-│   └ Spring Security
+│   ├ Spring Security
+│   └ Swagger
 ├ Database
 │   ├ MySQL
 │   ├ Redis
 │   └ Querydsl
 ├ DevOps
 │   ├ Docker
-│   └ GitHub Actions
+│   ├ GitHub Actions
+│   └ Gradle
 ├ Development Tools
 │   ├ Git/GitHub
 │   └ IntelliJ
 ├ Cloud Platforms
 │   └ AWS
-└ Project
-    └ Yeogiya
+├ Project
+│   └ Yeogiya
+└ Etc
+    └ Blog
 ```
