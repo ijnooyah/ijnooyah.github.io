@@ -1,13 +1,13 @@
 ---
-title: "[Spring Framework] 문자열로 들어오는 날짜를 LocalDateTime으로 받는 법"
+title: "[Spring Boot] 문자열로 들어오는 날짜를 LocalDateTime으로 받는 법"
 excerpt: ""
 
 categories:
-  - Spring Framework
+  - Spring Boot
 tags:
-  - [Spring Framework, DateTimeFormat, JsonFormat, 트러블 슈팅]
+  - [Spring Boot, DateTimeFormat, JsonFormat, 트러블 슈팅]
 
-permalink: /spring-framework/string-to-local-date-time
+permalink: /spring-boot/string-to-local-date-time
 
 toc: true
 toc_sticky: true

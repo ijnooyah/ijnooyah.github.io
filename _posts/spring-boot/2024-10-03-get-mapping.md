@@ -1,13 +1,13 @@
 ---
-title: "[Spring Framework] @GetMapping과 @RequestBody(feat. SpringDoc)"
+title: "[Spring Boot] @GetMapping과 @RequestBody(feat. SpringDoc)"
 excerpt: ""
 
 categories:
-  - Spring Framework
+  - Spring Boot
 tags:
-  - [Spring Framework, 트러블 슈팅]
+  - [Spring Boot, 트러블 슈팅]
 
-permalink: /spring-framework/get-mapping
+permalink: /spring-boot/get-mapping
 
 toc: true
 toc_sticky: true
@@ -91,13 +91,13 @@ public CommonResponse<AdminUserListResponse> searchUsersWithCursor(@ParameterObj
 `@RequestParam`을 사용해서 파라미터를 하나하나 받게되면 스웨거 문서에 필드 하나하나 받을 수 있게 나온다.  
 그런데 `AdminUserSearchCondition`만 달랑 놓으니 JSON 형태로 입력받을 수 있게 나오는데 이게 되게 보기에도 안좋았고 입력하기도 불편했다. 다른 사람의 이미지를 가져와서 어떻게 보여지는 보여주면  
 
-![alt text](/assets/images/posts_img/spring-framework/get-mapping/json.png)
+![alt text](/assets/images/posts_img/spring-boot/get-mapping/json.png)
 출처: https://yeonyeon.tistory.com/324
 
 이런식으로 나오는 것이다. 
 
 뭔가 방법이 없을까 하다가 `@ParameterObject`라는 것을 찾았고 해당 어노테이션을 붙이면 필드를 마치 쿼리 파라미터를 사용한 것처럼 하나하나 받을 수 있게 스웨거 문서를 구성할 수 있다.  
 
-![alt text](/assets/images/posts_img/spring-framework/get-mapping/parameterobject.png)
+![alt text](/assets/images/posts_img/spring-boot/get-mapping/parameterobject.png)
 
 이런식으로 말이다!

@@ -15,6 +15,7 @@
 │   ├ Architecture
 │   └ Design Pattern
 ├ Spring
+│   ├ Spring Boot
 │   ├ Spring Data JPA
 │   ├ Spring Framework
 │   ├ Spring Security
